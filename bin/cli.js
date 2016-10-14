@@ -38,7 +38,8 @@
 		}
 	})
 	.then( function(){
-		if( scanner.isNodeProject()){
+		scan.isNodeProject = scanner.isNodeProject();
+		if( scan.isNodeProject ){
 			console.log("Updating node dependencies".yellow );
 			return scanner.updateNodeDependencies();
 		}
@@ -46,16 +47,33 @@
 		console.log("Not a node project".yellow );
 	})
 	.then( function(){
-		if( scanner.isBowerProject()){
+		scan.isBowerProject = scanner.isBowerProject();
+		if( scan.isBowerProject ){
 			console.log( "Updating bower dependencies".yellow );
 			return scanner.updateBowerDependencies();
 		}
 
 		console.log("Not a bower project".yellow );
 	})
+	.then( function(){
+		if( scan.isNodeProject ){
+			console.log("Scanning for node dependencies and licenses".yellow );
+			return scanner.scanForNodeDependencies();
+		}
+	})
+	.then( function( nodeDependencies ){
+		scan.nodeDependencies = nodeDependencies;
+	})
+	.then( function(){
+		console.log("Write node licenses file".yellow );
+		return scanner.writeDependencyCSV( 'node_licence.csv', scan.nodeDependencies );
+	})
+	.then( function(){
+		console.log("Done.".yellow );
+	})
 	.catch( function( error ){
 		console.error( error );
-		console.error("Terminating Scan");
+		console.error("Terminating Scan.");
 	});
 
 

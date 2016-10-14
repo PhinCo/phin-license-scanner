@@ -34,7 +34,7 @@
 	.then( function( info ){
 		scan.repoInfo = info;
 		if( scan.repoInfo.isClean ){
-			console.log("Repo is clean at commit hash ".yellow + scan.repoInfo.commitHash );
+			console.log("Repo is clean at commit hash ".yellow + scan.repoInfo.hash );
 		}else{
 			console.log("Repo is not clean".yellow );
 			if( scan.requireCleanRepo ){

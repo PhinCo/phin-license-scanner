@@ -1,5 +1,5 @@
 {
-  "name": "phin-license-scanner",
+  "name": "@connectedyard/phin-license-scanner",
   "version": "1.0.0",
   "description": "scan for licenses in phin nodejs projects (nodejs and bower dependencies)",
   "main": "index.js",

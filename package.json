@@ -16,6 +16,7 @@
     "commander": "^2.9.0",
     "csvwriter": "^1.2.0",
     "license-checker": "^8.0.0",
-    "lodash": "^4.16.4"
+    "lodash": "^4.16.4",
+    "prompt": "^1.0.0"
   }
 }

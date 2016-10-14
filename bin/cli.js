@@ -4,8 +4,10 @@
 
 	'use strict';
 
+	var Promise = require('bluebird');
 	var program = require('commander');
 	var scanner = require('../lib/phin-license-scanner');
+	var fs = require('fs');
 	require('colors');
 
 	program
@@ -18,59 +20,59 @@
 	if( program.node === void 0 ) program.node = "1";
 	if( program.bower === void 0 ) program.bower = "1";
 
-	var scan = {};
-	scan.requireCleanRepo = parseInt( program.clean ) === 1;
-	scan.includeNodeDependencies = parseInt( program.node ) === 1;
-	scan.includeBowerDependencies = parseInt( program.bower ) === 1;
+	program.clean = parseInt( program.clean ) === 1;
+	program.node = parseInt( program.node ) === 1;
+	program.bower = parseInt( program.bower ) === 1;
 
-	/*****
-	 * Begin Scan
-	 */
-
-	scan.cwd = process.cwd();
-	console.log( "Beginning scan of ".yellow + scan.cwd.white );
+	_performScanInDirectory( "." );
 
 
-	scanner.getRepoInfo()
-	.then( function( info ){
-		scan.repoInfo = info;
-		if( scan.repoInfo.isClean ){
-			console.log("Repo is clean at commit hash ".yellow + scan.repoInfo.hash );
-		}else{
-			console.log("Repo is not clean".yellow );
-			if( scan.requireCleanRepo ){
-				return _promptForDirtyRepo();
+	function _performScanInDirectory( path ){
+
+		console.log( "Beginning scan of ".yellow + process.cwd().white );
+
+		_checkRepoState()
+		.then( function( isRepoStatusOK ){
+			if( !isRepoStatusOK ){
+				console.log("Aborting.");
 			}else{
-				console.log("Continuing with dirty repo");
+				return _scanNodeDependencies()
+				.then( function(){
+					return _scanBowerDependencies();
+				})
 			}
-		}
-	})
-	.then( function(){
-		if( !scan.includeNodeDependencies ) return console.log( "Skipping node scanning".yellow );
-		return _scanNodeDependencies();
-	})
-	.then( function(){
-		if( !scan.includeBowerDependencies ) return console.log("Skipping bower scanning".yellow );
-		return _scanBowerDependencies();
-	})
-	.then( function(){
-		console.log("Done.".yellow );
-	})
-	.catch( function( error ){
-		console.error( error );
-		console.error("Terminating Scan.");
-	});
+		})
+		.then( function(){
+			console.log("Finished scan of ".yellow + process.cwd().white );
+		})
+		.catch( function( error ){
+			console.error("Terminating Scan.");
+			throw error;
+		});
+	}
 
+	//------------------------------------//
 
-	function _promptForDirtyRepo(){
-		/* Prompt user to continue with or without a git pull */
-		return true;
+	function _checkRepoState(){
+		return scanner.getRepoInfo()
+		.then( function( info ){
+			if( info.isClean ){
+				console.log( "Repo is clean at commit hash ".yellow + info.hash );
+				return true;
+			}else{
+				console.log( "Repo is not clean".yellow );
+				if( program.clean ) return false;
+				console.log( "Continuing with dirty repo" );
+				return true;
+			}
+		});
 	}
 
 	function _scanNodeDependencies(){
+		if( !program.node ) return console.log( "Skipping node scanning".yellow );
+
 		console.log( "Checking if project is a node project".yellow );
-		scan.isNodeProject = scanner.isNodeProject();
-		if( !scan.isNodeProject ) return console.log( "Not a node project".yellow );
+		if( !scanner.isNodeProject() ) return console.log( "Not a node project".yellow );
 
 		console.log( "Updating node dependencies".yellow );
 
@@ -81,18 +83,16 @@
 		})
 		.then( function( nodeDependencies ){
 			console.log( "Node dependency scan complete. ".yellow + ("" + nodeDependencies.length + " found").white );
-			scan.nodeDependencies = nodeDependencies;
-		})
-		.then( function(){
 			console.log( "Writing node licenses file".yellow );
-			return scanner.writeDependencyCSV( 'node_licence.csv', scan.nodeDependencies );
+			return scanner.writeDependencyCSV( 'node_licence.csv', nodeDependencies );
 		})
 	}
 
 	function _scanBowerDependencies(){
+		if( !program.bower ) return console.log("Skipping bower scanning".yellow );
+
 		console.log("Checking if project is a bower project".yellow );
-		scan.isBowerProject = scanner.isBowerProject() ;
-		if( !scan.isBowerProject ) return console.log("Not a bower project".yellow );
+		if( !scanner.isBowerProject() ) return console.log("Not a bower project".yellow );
 
 		console.log( "Updating bower dependencies".yellow );
 		return scanner.updateBowerDependencies()
@@ -102,11 +102,8 @@
 		})
 		.then( function( bowerDependencies ){
 			console.log( "Bower dependency scan complete. ".yellow + ("" + bowerDependencies.length + " found").white );
-			scan.bowerDependencies = bowerDependencies;
-		})
-		.then( function(){
 			console.log( "Writing bower licenses file".yellow );
-			return scanner.writeDependencyCSV( 'bower_licence.csv', scan.bowerDependencies );
+			return scanner.writeDependencyCSV( 'bower_licence.csv', bowerDependencies );
 		});
 	}
 

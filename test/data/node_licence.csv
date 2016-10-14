@@ -1,0 +1,71 @@
+dependency,path,email,licenses,publisher,repo,depth,isProduction
+JSONPath@0.11.2,csvwriter/node_modules/JSONPath,,MIT,Stefan Goessner,https://github.com/s3u/JSONPath,3,true
+abbrev@1.0.9,bower-license/node_modules/npm-license/node_modules/nopt/node_modules/abbrev,i@izs.me,ISC,Isaac Z. Schlueter,https://github.com/isaacs/abbrev-js,7,true
+ansi-regex@0.2.1,license-checker/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex,sindresorhus@gmail.com,MIT,Sindre Sorhus,https://github.com/sindresorhus/ansi-regex,7,true
+ansi-styles@1.1.0,license-checker/node_modules/chalk/node_modules/ansi-styles,sindresorhus@gmail.com,MIT,Sindre Sorhus,https://github.com/sindresorhus/ansi-styles,5,true
+asap@2.0.5,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/readdir-scoped-modules/node_modules/dezalgo/node_modules/asap,,MIT,,https://github.com/kriskowal/asap,11,true
+balanced-match@0.4.2,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match,mail@juliangruber.com,MIT,Julian Gruber,https://github.com/juliangruber/balanced-match,15,true
+bluebird@3.4.6,bluebird,petka_antonov@hotmail.com,MIT,Petka Antonov,https://github.com/petkaantonov/bluebird,1,true
+bower-json@0.4.0,bower-license/node_modules/bower-json,,MIT,Twitter,https://github.com/bower/json,3,true
+bower-license@0.4.4,bower-license,baduncaduncan@gmail.com,Apache-2.0,Duncan Wong,https://github.com/AceMetrix/bower-license,1,true
+brace-expansion@1.1.6,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion,mail@juliangruber.com,MIT,Julian Gruber,https://github.com/juliangruber/brace-expansion,13,true
+builtin-modules@1.1.1,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/normalize-package-data/node_modules/is-builtin-module/node_modules/builtin-modules,sindresorhus@gmail.com,MIT,Sindre Sorhus,https://github.com/sindresorhus/builtin-modules,13,true
+chalk@0.5.1,license-checker/node_modules/chalk,,MIT,,https://github.com/sindresorhus/chalk,3,true
+cli-table@0.3.1,csvwriter/node_modules/cli-table,guillermo@learnboost.com,UNKNOWN,Guillermo Rauch,https://github.com/Automattic/cli-table,3,true
+colors@1.0.3,csvwriter/node_modules/cli-table/node_modules/colors,,MIT,Marak Squires,https://github.com/Marak/colors.js,5,true
+colors@1.1.2,colors,,MIT,Marak Squires,https://github.com/Marak/colors.js,1,true
+commander@2.9.0,commander,tj@vision-media.ca,MIT,TJ Holowaychuk,https://github.com/tj/commander.js,1,true
+concat-map@0.0.1,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map,mail@substack.net,MIT,James Halliday,https://github.com/substack/node-concat-map,15,true
+csvwriter@1.2.0,csvwriter,,MIT,GazonkFoo,https://github.com/GazonkFoo/csvwriter,1,true
+debug@2.2.0,license-checker/node_modules/debug,tj@vision-media.ca,MIT,TJ Holowaychuk,https://github.com/visionmedia/debug,3,true
+debuglog@1.0.1,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/debuglog,sam@strongloop.com,MIT,Sam Roberts,https://github.com/sam-github/node-debuglog,7,true
+deep-extend@0.2.11,bower-license/node_modules/bower-json/node_modules/deep-extend,lotsmanov89@gmail.com,MIT,Viacheslav Lotsmanov,https://github.com/unclechu/node-deep-extend,5,true
+dezalgo@1.0.3,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/readdir-scoped-modules/node_modules/dezalgo,i@izs.me,ISC,Isaac Z. Schlueter,https://github.com/npm/dezalgo,9,true
+escape-string-regexp@1.0.5,license-checker/node_modules/chalk/node_modules/escape-string-regexp,sindresorhus@gmail.com,MIT,Sindre Sorhus,https://github.com/sindresorhus/escape-string-regexp,5,true
+glob@6.0.4,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/glob,i@izs.me,ISC,Isaac Z. Schlueter,https://github.com/isaacs/node-glob,9,true
+graceful-fs@2.0.3,bower-license/node_modules/bower-json/node_modules/graceful-fs,i@izs.me,BSD,Isaac Z. Schlueter,https://github.com/isaacs/node-graceful-fs,5,true
+graceful-fs@4.1.9,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/graceful-fs,,ISC,,https://github.com/isaacs/node-graceful-fs,7,true
+graceful-readlink@1.0.1,commander/node_modules/graceful-readlink,,MIT,zhiyelee,https://github.com/zhiyelee/graceful-readlink,3,true
+has-ansi@0.1.0,license-checker/node_modules/chalk/node_modules/has-ansi,sindresorhus@gmail.com,MIT,Sindre Sorhus,https://github.com/sindresorhus/has-ansi,5,true
+hosted-git-info@2.1.5,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/normalize-package-data/node_modules/hosted-git-info,me@re-becca.org,ISC,Rebecca Turner,https://github.com/npm/hosted-git-info,11,true
+inflight@1.0.6,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/glob/node_modules/inflight,i@izs.me,ISC,Isaac Z. Schlueter,https://github.com/npm/inflight,11,true
+inherits@2.0.3,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/glob/node_modules/inherits,,ISC,,https://github.com/isaacs/inherits,11,true
+intersect@0.0.3,bower-license/node_modules/bower-json/node_modules/intersect,mail@juliangruber.com,MIT,Julian Gruber,https://github.com/juliangruber/intersect,5,true
+is-builtin-module@1.0.0,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/normalize-package-data/node_modules/is-builtin-module,sindresorhus@gmail.com,MIT,Sindre Sorhus,https://github.com/sindresorhus/is-builtin-module,11,true
+jju@1.3.0,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/json-parse-helpfulerror/node_modules/jju,alex@kocharin.ru,WTFPL,Alex Kocharin,https://github.com/rlidwka/jju,11,true
+json-parse-helpfulerror@1.0.3,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/json-parse-helpfulerror,smikes@cubane.com,MIT,Sam Mikes,https://github.com/smikes/json-parse-helpfulerror,9,true
+license-checker@8.0.0,license-checker,davglass@gmail.com,BSD-3-Clause,Dav Glass,https://github.com/davglass/license-checker,1,true
+lodash@4.16.4,lodash,john.david.dalton@gmail.com,MIT,John-David Dalton,https://github.com/lodash/lodash,1,true
+minimatch@3.0.3,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/glob/node_modules/minimatch,i@izs.me,ISC,Isaac Z. Schlueter,https://github.com/isaacs/minimatch,11,true
+minimist@0.0.8,bower-license/node_modules/npm-license/node_modules/mkdirp/node_modules/minimist,mail@substack.net,MIT,James Halliday,https://github.com/substack/minimist,7,true
+mkdirp@0.3.5,license-checker/node_modules/mkdirp,mail@substack.net,MIT,James Halliday,https://github.com/substack/node-mkdirp,3,true
+mkdirp@0.5.1,bower-license/node_modules/npm-license/node_modules/mkdirp,mail@substack.net,MIT,James Halliday,https://github.com/substack/node-mkdirp,5,true
+ms@0.7.1,license-checker/node_modules/debug/node_modules/ms,,UNKNOWN,,https://github.com/guille/ms.js,5,true
+nopt-usage@0.1.0,bower-license/node_modules/npm-license/node_modules/nopt-usage,,MIT,,,5,true
+nopt@2.2.1,license-checker/node_modules/nopt,i@izs.me,MIT,Isaac Z. Schlueter,https://github.com/isaacs/nopt,3,true
+nopt@3.0.6,bower-license/node_modules/npm-license/node_modules/nopt,i@izs.me,ISC,Isaac Z. Schlueter,https://github.com/npm/nopt,5,true
+normalize-package-data@2.3.5,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/normalize-package-data,merynstol@gmail.com,BSD-2-Clause,Meryn Stol,https://github.com/npm/normalize-package-data,9,true
+npm-license@0.3.3,bower-license/node_modules/npm-license,baduncaduncan@gmail.com,BSD,Duncan Wong,https://github.com/AceMetrix/npm-license,3,true
+once@1.4.0,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/glob/node_modules/once,i@izs.me,ISC,Isaac Z. Schlueter,https://github.com/isaacs/once,11,true
+package-license@0.1.2,bower-license/node_modules/package-license,baduncaduncan@gmail.com,Apache2,Duncan Wong,https://github.com/AceMetrix/package-license,3,true
+path-is-absolute@1.0.1,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/glob/node_modules/path-is-absolute,sindresorhus@gmail.com,MIT,Sindre Sorhus,https://github.com/sindresorhus/path-is-absolute,11,true
+phin-license-scanner@1.0.0,,,MIT,Scott Eklund,,1,true
+pkginfo@0.3.1,bower-license/node_modules/npm-license/node_modules/pkginfo,charlie.robbins@gmail.com,MIT,Charlie Robbins,https://github.com/indexzero/node-pkginfo,5,true
+raptor-args@1.0.3,bower-license/node_modules/raptor-args,pnidem@gmail.com,MIT,Patrick Steele-Idem,https://github.com/raptorjs/raptor-args,3,true
+read-installed@4.0.3,bower-license/node_modules/npm-license/node_modules/read-installed,i@izs.me,ISC,Isaac Z. Schlueter,https://github.com/isaacs/read-installed,5,true
+read-package-json@2.0.4,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json,i@izs.me,ISC,Isaac Z. Schlueter,https://github.com/npm/read-package-json,7,true
+readdir-scoped-modules@1.0.2,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/readdir-scoped-modules,i@izs.me,ISC,Isaac Z. Schlueter,https://github.com/npm/readdir-scoped-modules,7,true
+semver@5.3.0,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/semver,,ISC,,https://github.com/npm/node-semver,7,true
+slide@1.1.6,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/slide,i@izs.me,ISC,Isaac Z. Schlueter,https://github.com/isaacs/slide-flow-control,7,true
+spdx-correct@1.0.2,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct,kyle@kemitchell.com,Apache-2.0,Kyle E. Mitchell,https://github.com/kemitchell/spdx-correct.js,13,true
+spdx-expression-parse@1.0.4,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-expression-parse,kyle@kemitchell.com,(MIT AND CC-BY-3.0),Kyle E. Mitchell,https://github.com/kemitchell/spdx-expression-parse.js,13,true
+spdx-license-ids@1.2.2,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/normalize-package-data/node_modules/validate-npm-package-license/node_modules/spdx-correct/node_modules/spdx-license-ids,,Unlicense,Shinnosuke Watanabe,https://github.com/shinnn/spdx-license-ids,15,true
+strip-ansi@0.3.0,license-checker/node_modules/chalk/node_modules/strip-ansi,sindresorhus@gmail.com,MIT,Sindre Sorhus,https://github.com/sindresorhus/strip-ansi,5,true
+supports-color@0.2.0,license-checker/node_modules/chalk/node_modules/supports-color,sindresorhus@gmail.com,MIT,Sindre Sorhus,https://github.com/sindresorhus/supports-color,5,true
+treeify@1.0.1,bower-license/node_modules/treeify,notatestuser@gmail.com,MIT,Luke Plaster,https://github.com/notatestuser/treeify,3,true
+underscore@1.4.4,bower-license/node_modules/npm-license/node_modules/underscore,jeremy@documentcloud.org,UNKNOWN,Jeremy Ashkenas,https://github.com/documentcloud/underscore,5,true
+underscore@1.5.2,bower-license/node_modules/underscore,jeremy@documentcloud.org,MIT,Jeremy Ashkenas,https://github.com/jashkenas/underscore,3,true
+util-extend@1.0.3,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/util-extend,,MIT,,https://github.com/isaacs/util-extend,7,true
+validate-npm-package-license@3.0.1,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/normalize-package-data/node_modules/validate-npm-package-license,kyle@kemitchell.com,Apache-2.0,Kyle E. Mitchell,https://github.com/kemitchell/validate-npm-package-license.js,11,true
+wrappy@1.0.2,bower-license/node_modules/npm-license/node_modules/read-installed/node_modules/read-package-json/node_modules/glob/node_modules/once/node_modules/wrappy,i@izs.me,ISC,Isaac Z. Schlueter,https://github.com/npm/wrappy,13,true
+phin-license-scanner@1.0.0,,,MIT,Scott Eklund,,1,

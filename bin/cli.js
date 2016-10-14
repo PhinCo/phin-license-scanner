@@ -1,9 +1,10 @@
+#!/usr/bin/env node
+
 ( function(){
 
 	'use strict';
 
 	var program = require('commander');
-	var Promise = require('bluebird');
 	var scanner = require('../lib/phin-license-scanner');
 	require('colors');
 

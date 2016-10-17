@@ -28,36 +28,40 @@
 	program.node = parseInt( program.node ) === 1;
 	program.bower = parseInt( program.bower ) === 1;
 
-	var scans = [];
-	_.each( program.args, function( directoryPath ){
-		scans.push( _performScanInDirectory( directoryPath ));
+	Promise.mapSeries( program.args, function( directoryPath ){
+		return _performScanInDirectory( directoryPath );
 	});
-
 
 	function _performScanInDirectory( directoryPath ){
 
-		console.log( "Beginning scan of ".yellow + directoryPath.white );
+		return new Promise( function( resolve ){
 
-		var scanner = new Scanner( directoryPath );
+			console.log( "Beginning scan of ".yellow + directoryPath.white );
 
-		return _checkRepoState( scanner )
-		.then( function(isRepoStatusOK){
-			if( !isRepoStatusOK ){
-				console.log( "Aborting." );
-			}else{
-				return _scanNodeDependencies( scanner )
-				.then( function(){
-					return _scanBowerDependencies( scanner );
-				} )
-			}
+			var scanner = new Scanner( directoryPath );
+
+			_checkRepoState( scanner )
+			.then( function(isRepoStatusOK){
+				if( !isRepoStatusOK ){
+					console.log( "Aborting." );
+				}else{
+					return _scanNodeDependencies( scanner )
+					.then( function(){
+						return _scanBowerDependencies( scanner );
+					} )
+				}
+			})
+			.then( function(){
+				console.log( "Finished scan of ".yellow + directoryPath.white );
+			})
+			.catch( function(error){
+				console.error( "Terminating scan of ".yellow + directoryPath.white );
+			})
+			.then( function(){
+				resolve();
+			});
 		})
-		.then( function(){
-			console.log( "Finished scan of ".yellow + directoryPath.white );
-		})
-		.catch( function(error){
-			console.error( "Terminating scan of ".yellow + directoryPath.white );
-			throw error;
-		});
+
 	}
 
 	function _checkRepoState( scanner ){

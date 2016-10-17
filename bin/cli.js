@@ -67,9 +67,11 @@
 				console.log( "Repo is clean at commit hash ".yellow + info.hash );
 				return true;
 			}else{
-				console.log( "Repo is not clean".yellow );
-				if( program.clean ) return false;
-				console.log( "Continuing with dirty repo" );
+				if( program.clean ){
+					console.log( "Repo is not clean".red );
+					return false;
+				}
+				console.log( "Continuing with dirty repo".yellow );
 				return true;
 			}
 		} );

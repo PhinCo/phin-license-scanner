@@ -4,9 +4,21 @@ Phin's scanner for OSS license dependencies
 
 Scans for *node* and *bower* dependencies
 
-## Process
+## Installation
 
-From the Root Folder:
+```npm install -g @connectedyard/phin-license-scanner```
+
+## Usage: Scan a Project Folder
+
+```phin-license-scanner project-folder```
+
+## Usage: Scan all of pHin
+
+```./scripts/scan_phin.sh ~/repos/phin```
+
+## Overview of The Scan Process
+
+From the Project Root Folder:
 
 1. Ensure that the repo is clean (offer to git pull)
 2. Ensure that the dependencies are up to date
@@ -15,7 +27,6 @@ From the Root Folder:
     c. bower install
     d. bower prune
 3. Run the license checkers
-    a. license-checker --production --unknown --csv --out license_list_node_production.csv		
-    b. license-checker --development --unknown --csv --out license_list_node_development.csv
-    c. bower-license -e json
 4. Collect all results in csv file
+
+

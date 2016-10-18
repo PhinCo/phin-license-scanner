@@ -12,14 +12,16 @@ TOOL_FOLDERS="phin-bridge-firmware/src phirmware-test/nodejs phirmware-tool node
 for f in $PRODUCTION_FOLDERS; do
     if [[ -d $f ]]; then
         # $f is a directory
-        phin-license-scanner -c 0 -u $f
+        echo phin-license-scanner --enableUnclean -u $f
+        phin-license-scanner --enableUnclean -u $f
     fi
 done
 
 for f in $TOOL_FOLDERS; do
     if [[ -d $f ]]; then
         # $f is a directory
-        phin-license-scanner -c 0 -ud $f
+        echo phin-license-scanner --enableUnclean -ud $f
+        phin-license-scanner --enableUnclean -ud $f
     fi
 done
 

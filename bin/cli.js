@@ -13,18 +13,15 @@
 	require('colors');
 
 	program
-	.option('-c, --clean [clean]', 'Require repo to be clean {0|1}, default 1=true')
-	.option('-n, --node [node]', 'Scan for node dependencies {0|1}, default 1=true')
-	.option('-b, --bower [bower]', 'Scan for bower dependencies {0|1}, default 1=true')
+	.option('--enableUnclean', "Don't require repo to be clean, default is clean required")
+	.option('--skipNode', "Don't scan for node dependencies, default is scan for node")
+	.option('--skipBower', "Don't scan for bower dependencies, default is scan for bower")
 	.option('-d, --dev', 'Categorize all dependencies as development')
 	.option('-p, --prod', 'Categorize all dependenceis as production')
 	.option('-u, --unknowns', 'Log unknowns to the console as warnings')
 	.arguments("[directories]", "Default is cwd")
 	.parse( process.argv );
 
-	if( program.clean === void 0 ) program.clean = "1";
-	if( program.node === void 0 ) program.node = "1";
-	if( program.bower === void 0 ) program.bower = "1";
 	if( program.args.length === 0 ) program.args.push(".");
 	if( program.dev && program.prod ){
 		console.error("Can pass in only one of --dev or --prod");
@@ -32,10 +29,6 @@
 	}
 	if( program.dev) program.overideCategorization = 'dev';
 	else if( program.prod) program.overideCategorization = 'prod';
-
-	program.clean = parseInt( program.clean ) === 1;
-	program.node = parseInt( program.node ) === 1;
-	program.bower = parseInt( program.bower ) === 1;
 
 	Promise.mapSeries( program.args, function( directoryPath ){
 		return _performScanInDirectory( directoryPath );
@@ -64,9 +57,10 @@
 				console.log( "Finished scan of ".yellow + directoryPath.white );
 			})
 			.catch( function(error){
-				console.error( "Terminating scan of ".yellow + directoryPath.white );
+				console.error( "Terminating scan of ".yellow + directoryPath.white + ": ".white + error.message.red );
 			})
 			.then( function(){
+				console.log("------------------------------------------");
 				resolve();
 			});
 		})
@@ -80,22 +74,22 @@
 				console.log( "Repo is clean at commit hash ".yellow + info.hash );
 				return true;
 			}else{
-				if( program.clean ){
+				if( program.enableUnclean ){
+					console.log( "Continuing with dirty repo".yellow );
+					return true;
+				}else {
 					console.log( "Repo is not clean".red );
 					return false;
 				}
-				console.log( "Continuing with dirty repo".yellow );
-				return true;
 			}
-		} );
+		});
 	}
 
 	function _scanNodeDependencies( scanner ){
 		return new Promise( function( resolve, reject ){
 			var nodeDependencies = false;
-			var bowerDependencies = false;
 
-			if( !program.node ){
+			if( program.skipNode ){
 				console.log( "Skipping node scanning".yellow );
 				return resolve();
 			}
@@ -107,7 +101,7 @@
 
 			console.log( "Updating node dependencies".yellow );
 
-			return scanner.installNodeDependencies()
+			scanner.installNodeDependencies()
 			.then( function(){
 				console.log( "Scanning for node dependencies and licenses".yellow );
 				return scanner.scanForNodeDependencies();
@@ -138,7 +132,9 @@
 
 	function _scanBowerDependencies( scanner ){
 		return new Promise( function( resolve, reject ){
-			if( !program.bower ){
+			var bowerDependencies = false;
+
+			if( program.skipBower ){
 				console.log( "Skipping bower scanning in ".yellow + scanner.directory.white );
 				return resolve();
 			}
@@ -150,19 +146,24 @@
 
 			console.log( "Updating bower dependencies".yellow );
 
-			return scanner.installBowerDependencies()
+			scanner.installBowerDependencies()
 			.then( function(){
 				console.log( "Scanning for bower dependencies and licenses".yellow );
 				return scanner.scanForBowerDependencies();
 			})
-			.then( function(bowerDependencies){
+			.then( function( dependencies ){
+				bowerDependencies = dependencies
 				if( program.overideCategorization ){
 					console.log( "Overriding dependency categorization as ".yellow + program.overideCategorization );
 					bowerDependencies = _overrideCategorization( bowerDependencies, program.overideCategorization );
 				}
-				return bowerDependencies;
 			})
-			.then( function(bowerDependencies){
+			.then( function(){
+				if( program.unknowns ){
+					_logUknowns( nodeDependencies );
+				}
+			})
+			.then( function(){
 				console.log( "Bower dependency scan complete. ".yellow + ("" + bowerDependencies.length + " found").white );
 				console.log( "Writing bower licenses file".yellow );
 				return scanner.writeDependencyCSV( 'bower_licence.csv', bowerDependencies );

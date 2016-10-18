@@ -1,18 +1,29 @@
 #!/usr/bin/env bash
 
-pushd $1
+START_DIRECTORY=$1
 
-ADDITIONAL_FOLDERS="phin-bridge-firmware/src phirmware-test/nodejs"
+if [ -n ${START_DIRECTORY+x} ]; then
+	pushd $1
+fi
 
-for f in * $ADDITIONAL_FOLDERS; do
+PRODUCTION_FOLDERS="phin-admin phin-api phin-service-network web phinternal"
+TOOL_FOLDERS="phin-bridge-firmware/src phirmware-test/nodejs phirmware-tool node-jlink phin-nrf51 node-intelhex phin-license-scanner"
+
+for f in $PRODUCTION_FOLDERS; do
     if [[ -d $f ]]; then
         # $f is a directory
-        echo Entering $f
-        pushd $f
-        phin-license-scanner .
-        popd
-        echo Leaving $f
+        phin-license-scanner -c 0 -u $f
     fi
 done
 
-popd
+for f in $TOOL_FOLDERS; do
+    if [[ -d $f ]]; then
+        # $f is a directory
+        phin-license-scanner -c 0 -ud $f
+    fi
+done
+
+if [ -n ${START_DIRECTORY+x} ]; then
+	popd
+fi
+

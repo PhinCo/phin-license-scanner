@@ -160,7 +160,7 @@
 			})
 			.then( function(){
 				if( program.unknowns ){
-					_logUknowns( nodeDependencies );
+					_logUknowns( bowerDependencies );
 				}
 			})
 			.then( function(){

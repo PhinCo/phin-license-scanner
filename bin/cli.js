@@ -121,7 +121,7 @@
 			.then( function(){
 				console.log( "Node dependency scan complete. ".yellow + ("" + nodeDependencies.length + " found").white );
 				console.log( "Writing node licenses file".yellow );
-				return scanner.writeDependencyCSV( 'node_licence.csv', nodeDependencies );
+				return scanner.writeDependencyCSV( 'node_license.csv', nodeDependencies );
 			})
 			.then( function(){
 				resolve();
@@ -166,7 +166,7 @@
 			.then( function(){
 				console.log( "Bower dependency scan complete. ".yellow + ("" + bowerDependencies.length + " found").white );
 				console.log( "Writing bower licenses file".yellow );
-				return scanner.writeDependencyCSV( 'bower_licence.csv', bowerDependencies );
+				return scanner.writeDependencyCSV( 'bower_license.csv', bowerDependencies );
 			})
 			.then( function(){
 				resolve();

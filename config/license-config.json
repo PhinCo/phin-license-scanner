@@ -38,6 +38,7 @@
     "phin-nrf51",
     "node-intelhex",
     "phin-advertisement-unpacker",
+    "phin-bridge-firmware",
     "phin-angular"
   ]
 }

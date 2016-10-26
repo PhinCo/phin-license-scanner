@@ -1,0 +1,39 @@
+{
+  "node": {
+    "cli-table@0.3.1" : "MIT",
+    "ms@0.7.1" : "MIT",
+    "commander@0.6.1": "MIT",
+    "commander@2.6.3": "MIT",
+    "cycle@1.0.3" : "Public Domain (https://github.com/dscape/cycle)",
+    "formatio@1.1.1" : "BSD",
+    "jade@0.26.3" : "MIT",
+    "progress@1.1.8" : "MIT",
+    "samsam@1.1.2" : "BSD",
+    "stack-trace@0.0.9" : "MIT",
+    "tv4@1.2.7" : "MIT",
+    "utile@0.3.0" : "MIT",
+    "assert-plus@0.1.5": "MIT",
+    "aws-sign2@0.5.0": "Apache V2.0",
+    "ctype@0.5.3" : "MIT",
+    "colors@0.6.2" : "MIT",
+    "retire@1.0.1" : "Apache V2.0",
+    "uglify-js@2.2.5" : "BSD",
+    "bitsyntax@0.0.4" : "MIT",
+    "buffers@0.1.1" : "MIT/X11",
+    "inherit@2.2.2" : "MIT",
+    "noptify@0.0.3" : "MIT",
+    "log-driver@1.2.5" : "https://github.com/cainus/logdriver/blob/master/LICENSE"
+  },
+  "bower": {
+    "ng-tags-input@3.0.0" : "MIT"
+  },
+  "exclude": [
+    "phin-admin",
+    "phin-common-js",
+    "phin-api",
+    "phin-nrf51",
+    "node-intelhex",
+    "phin-advertisement-unpacker",
+    "phin-angular"
+  ]
+}

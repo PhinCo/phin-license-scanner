@@ -16,9 +16,11 @@
 	.option('--enableUnclean', "Don't require repo to be clean, default is clean required")
 	.option('--skipNode', "Don't scan for node dependencies, default is scan for node")
 	.option('--skipBower', "Don't scan for bower dependencies, default is scan for bower")
+	.option('--skipUpdate', "Skip updating node and bower dependencies before scan")
 	.option('-d, --dev', 'Categorize all dependencies as development')
 	.option('-p, --prod', 'Categorize all dependenceis as production')
 	.option('-u, --unknowns', 'Log unknowns to the console as warnings')
+	.option('--config [filepath]', 'Provide an alternate config file')
 	.arguments("[directories]", "Default is cwd")
 	.parse( process.argv );
 
@@ -40,7 +42,7 @@
 
 			console.log( "Beginning scan of ".yellow + directoryPath.white );
 
-			var scanner = new Scanner( directoryPath );
+			var scanner = new Scanner( directoryPath, program.config );
 
 			_checkRepoState( scanner )
 			.then( function(isRepoStatusOK){
@@ -85,6 +87,11 @@
 		});
 	}
 
+	function _updateNodeDependencies( scanner ){
+		if( program.skipUpdate ) return Promise.resolve();
+		else return scanner.installNodeDependencies();
+	}
+
 	function _scanNodeDependencies( scanner ){
 		return new Promise( function( resolve, reject ){
 			var nodeDependencies = false;
@@ -101,7 +108,7 @@
 
 			console.log( "Updating node dependencies".yellow );
 
-			scanner.installNodeDependencies()
+			_updateNodeDependencies( scanner )
 			.then( function(){
 				console.log( "Scanning for node dependencies and licenses".yellow );
 				return scanner.scanForNodeDependencies();
@@ -130,6 +137,11 @@
 		});
 	}
 
+	function _updateBowerDependencies( scanner ){
+		if( program.skipUpdate ) return Promise.resolve();
+		else return scanner.installBowerDependencies();
+	}
+
 	function _scanBowerDependencies( scanner ){
 		return new Promise( function( resolve, reject ){
 			var bowerDependencies = false;
@@ -146,7 +158,7 @@
 
 			console.log( "Updating bower dependencies".yellow );
 
-			scanner.installBowerDependencies()
+			_updateBowerDependencies( scanner )
 			.then( function(){
 				console.log( "Scanning for bower dependencies and licenses".yellow );
 				return scanner.scanForBowerDependencies();

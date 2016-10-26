@@ -3,13 +3,16 @@
 START_DIRECTORY=$1
 
 if [ -n ${START_DIRECTORY+x} ]; then
-	pushd $1
+	START_DIRECTORY="~/repos/phin"
 fi
 
-PRODUCTION_FOLDERS="phin-admin phin-api phin-service-network web phinternal"
-TOOL_FOLDERS="phin-bridge-firmware phin-bridge-firmware/src phirmware-test/nodejs phirmware-tool node-jlink phin-nrf51 node-intelhex phin-license-scanner"
+pushd $1
 
-FLAGS=
+PRODUCTION_FOLDERS="phin-admin phin-api phin-service-network web phinternal phin-angular phin-common-js phin-web-accounts phin-advertisement-unpacker"
+TOOL_FOLDERS="phin-bridge-firmware phin-bridge-firmware/src phirmware-test/nodejs phirmware-tool node-jlink phin-nrf51 node-intelhex"
+#TOOL_FOLDERS=$TOOL_FOLDERS "phin-license-scanner"
+
+FLAGS="--skipUpdate --enableUnclean"
 
 for f in $PRODUCTION_FOLDERS; do
     if [[ -d $f ]]; then
@@ -27,7 +30,5 @@ for f in $TOOL_FOLDERS; do
     fi
 done
 
-if [ -n ${START_DIRECTORY+x} ]; then
-	popd
-fi
+popd
 

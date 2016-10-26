@@ -7,21 +7,23 @@ if [ -n ${START_DIRECTORY+x} ]; then
 fi
 
 PRODUCTION_FOLDERS="phin-admin phin-api phin-service-network web phinternal"
-TOOL_FOLDERS="phin-bridge-firmware/src phirmware-test/nodejs phirmware-tool node-jlink phin-nrf51 node-intelhex phin-license-scanner"
+TOOL_FOLDERS="phin-bridge-firmware phin-bridge-firmware/src phirmware-test/nodejs phirmware-tool node-jlink phin-nrf51 node-intelhex phin-license-scanner"
+
+FLAGS=
 
 for f in $PRODUCTION_FOLDERS; do
     if [[ -d $f ]]; then
         # $f is a directory
-        echo phin-license-scanner --enableUnclean -u $f
-        phin-license-scanner --enableUnclean -u $f
+        echo phin-license-scanner $FLAGS -u $f
+        phin-license-scanner $FLAGS -u $f
     fi
 done
 
 for f in $TOOL_FOLDERS; do
     if [[ -d $f ]]; then
         # $f is a directory
-        echo phin-license-scanner --enableUnclean -ud $f
-        phin-license-scanner --enableUnclean -ud $f
+        echo phin-license-scanner $FLAGS -ud $f
+        phin-license-scanner $FLAGS -ud $f
     fi
 done
 

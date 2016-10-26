@@ -1,4 +1,4 @@
 .idea
 node_modules
-node_licence.csv
 bower_license.csv
+test/data/**

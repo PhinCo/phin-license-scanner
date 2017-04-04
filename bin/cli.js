@@ -43,6 +43,7 @@
 			console.log( "Beginning scan of ".yellow + directoryPath.white );
 
 			var scanner = new Scanner( directoryPath, program.config );
+			console.log( "Config file loaded from: ".yellow + scanner.licenseConfig.filePath );
 
 			_checkRepoState( scanner )
 			.then( function(isRepoStatusOK){

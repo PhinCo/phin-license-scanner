@@ -8,8 +8,8 @@ fi
 
 pushd $1
 
-PRODUCTION_FOLDERS="phin-admin phin-api phin-service-network phinternal-api phin-angular phin-common-js phin-web-accounts phin-advertisement-unpacker"
-TOOL_FOLDERS="phin-bridge-firmware phin-bridge-firmware/src phirmware-test/nodejs phirmware-tool node-jlink phin-nrf51 node-intelhex node-cli-auth"
+PRODUCTION_FOLDERS="phin-admin phin-api phin-service-network phinternal-api phin-angular phin-common-js phin-web-accounts phin-advertisement-unpacker phin-web"
+TOOL_FOLDERS="phin-bridge-firmware phin-bridge-firmware/src phirmware-test/nodejs phirmware-tool node-jlink phin-nrf51 node-intelhex node-cli-auth phin-ble"
 #TOOL_FOLDERS=$TOOL_FOLDERS "phin-license-scanner"
 
 FLAGS="--skipUpdate --enableUnclean"

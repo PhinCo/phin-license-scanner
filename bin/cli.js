@@ -7,7 +7,11 @@
 	var program = require('commander');
 	var ScanRunner = require('../lib/DirectoryScanRunner');
 	var _ = require('lodash');
+	var path = require('path');
+	var fs = require('fs');
 	require('colors');
+
+	var LICENSE_CONFIG_FILE_PATH = path.join( __dirname, "../config/license-config.json" );
 
 	program
 	.option('--enableUnclean', "Don't require repo to be clean, default is clean required")
@@ -17,7 +21,8 @@
 	.option('-d, --dev', 'Categorize all dependencies as development')
 	.option('-p, --prod', 'Categorize all dependenceis as production')
 	.option('-u, --unknowns', 'Log unknowns to the console as warnings')
-	.option('--config [filepath]', 'Provide an alternate config file')
+	.option('--config [filepath]', 'Provide an alternate config file' )
+	.option('-r, --run [runner-key]', 'Execute a runner')
 	.arguments("[directories]", "Default is cwd")
 	.parse( process.argv );
 
@@ -26,9 +31,49 @@
 		console.error("Can pass in only one of --dev or --prod");
 		process.exit(1);
 	}
-	if( program.dev) program.overideCategorization = 'dev';
-	else if( program.prod) program.overideCategorization = 'prod';
 
-	return ScanRunner.scanDirectories( program.args, program );
+	if( !program.config ) program.config = LICENSE_CONFIG_FILE_PATH;
+	var options = {};
+
+	if( program.dev) options.overideCategorization = 'dev';
+	else if( program.prod ) options.overideCategorization = 'prod';
+
+	options.enableUnclean = program.enableUnclean;
+	options.skipNode = program.skipNode;
+	options.skipBower = program.skipBower;
+	options.skipUpdate = program.skipUpdate;
+	options.unknowns = program.unknowns;
+
+	options.config = _loadLicenseConfigFile( program.config );
+
+	function _loadLicenseConfigFile( filepath ){
+		var filedata = false;
+		var jsondata = false;
+
+		try{
+			filedata = fs.readFileSync( filepath, {encoding: 'utf8'} );
+		}catch( error ){
+			if( error.code === 'ENOENT' ) return false;
+			throw error;
+		}
+
+		try{
+			jsondata = JSON.parse( filedata );
+		}catch( error ){
+			console.error( "Failed to parse license config file:" + filepath );
+			throw error;
+		}
+
+		console.log( "Config file loaded from: ".yellow + filepath );
+
+		return jsondata;
+	}
+
+	if( program.run ){
+		var runner = _.get( options.config.runners, program.run );
+		return ScanRunner.run( runner, options );
+	}else{
+		return ScanRunner.scanDirectories( program.args, options );
+	}
 
 })();

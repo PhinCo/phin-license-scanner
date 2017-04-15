@@ -40,5 +40,58 @@
     "phin-advertisement-unpacker",
     "phin-bridge-firmware",
     "phin-angular"
-  ]
+  ],
+  "runners": {
+    "all": {
+      "options": {
+        "unknowns": true
+      },
+      "directories": {
+        "node-cli-auth": {
+            "dev": true
+        },
+        "node-intelhex": {
+            "dev": true
+        },
+        "node-jlink": {
+            "dev": true
+        },
+        "phin-admin": {
+        },
+        "phin-advertisement-unpacker": {
+        },
+        "phin-angular": {
+        },
+        "phin-api": {
+        },
+        "phin-ble": {
+        },
+        "phin-bridge-firmware/src": {
+            "dev": true
+        },
+        "phin-common-js": {
+        },
+        "phin-license-scanner": {
+            "dev": true
+        },
+        "phin-nrf51": {
+            "dev": true
+        },
+        "phin-service-network": {
+        },
+        "phin-web": {
+        },
+        "phin-web-accounts": {
+        },
+        "phinternal-api": {
+        },
+        "phirmware-test/nodejs": {
+            "dev": true
+        },
+        "phirmware-tool": {
+            "dev": true
+        }
+      }
+    }
+  }
 }

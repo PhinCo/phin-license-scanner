@@ -14,11 +14,15 @@ Scans for *node* and *bower* dependencies
 
 ## Usage: Scan all of pHin
 
-```./scripts/scan_phin.sh ~/repos/phin```
+```
+cd ~/repos/phin     # top of phin git repo tree
+phin-licenese-scanner --run all
+```
 
 ## Overview of The Scan Process
 
-From the Project Root Folder:
+From a Project Root Folder, the following steps are performed. Most of them can be activated
+or deactivated through command line arguments.
 
 1. Ensure that the repo is clean (offer to git pull)
 2. Ensure that the dependencies are up to date
@@ -33,8 +37,8 @@ From the Project Root Folder:
 TODO
 
 multi-folder:
-    enable to aggregate results in to another file
-    uniquify on dependency/version/license
-    warn for certain licenses ("GPL","UNknown") using regex
-    settings file in each project with local settings (production/dev/excludes)
+* enable to aggregate results in to another file
+* uniquify on dependency/version/license
+* warn for certain licenses ("GPL","Unknown") using regex
+* settings file in each project with local settings (production/dev/excludes)
     

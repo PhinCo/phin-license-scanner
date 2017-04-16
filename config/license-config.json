@@ -30,7 +30,7 @@
   "bower": {
     "ng-tags-input@3.0.0" : "MIT"
   },
-  "exclude": [
+  "excludedDependencies": [
     "phin-admin",
     "phinternal-api",
     "phin-common-js",
@@ -42,9 +42,30 @@
     "phin-angular"
   ],
   "runners": {
+    "test" : {
+      "options": {
+        "unknowns": true,
+        "output": {
+          "path": "results.json",
+          "format": "json"
+        }
+      },
+      "directories": {
+        "node-cli-auth": {
+          "dev": true
+        },
+        "node-intelhex": {
+          "dev": true
+        }
+      }
+    },
     "all": {
       "options": {
-        "unknowns": true
+        "unknowns": true,
+        "output" : {
+          "path" : "results.json",
+          "format" : "json"
+        }
       },
       "directories": {
         "node-cli-auth": {

@@ -22,11 +22,15 @@
     "buffers@0.1.1" : "MIT/X11",
     "inherit@2.2.2" : "MIT",
     "noptify@0.0.3" : "MIT",
+    "retire@1.1.6" : "Apache V2.0",
+    "taffydb@2.6.2" : "BSD",
     "log-driver@1.2.4" : "https://github.com/cainus/logdriver/blob/master/LICENSE",
     "log-driver@1.2.5" : "https://github.com/cainus/logdriver/blob/master/LICENSE",
     "esmangle-evaluator@1.0.0": "BSD Like: https://github.com/estools/esmangle/blob/7e4ee597/lib/evaluator.js"
-
   },
+  "warnOnLicenses": [
+    "GPL", "MIT", "BSD"
+  ],
   "bower": {
     "ng-tags-input@3.0.0" : "MIT"
   },

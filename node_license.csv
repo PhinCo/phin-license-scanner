@@ -1,5 +1,4 @@
 name,path,email,licenses,publisher,repo,depth,isProduction
-@connectedyard/phin-license-scanner@1.1.1,,,MIT,Scott Eklund,,1,true
 JSONPath@0.11.2,,,MIT,Stefan Goessner,https://github.com/s3u/JSONPath,1,true
 abbrev@1.0.9,,i@izs.me,ISC,Isaac Z. Schlueter,https://github.com/isaacs/abbrev-js,1,true
 ansi-regex@0.2.1,,sindresorhus@gmail.com,MIT,Sindre Sorhus,https://github.com/sindresorhus/ansi-regex,1,true
@@ -87,4 +86,3 @@ utile@0.3.0,,info@nodejitsu.com,MIT,Nodejitsu Inc.,https://github.com/flatiron/u
 validate-npm-package-license@3.0.1,,kyle@kemitchell.com,Apache-2.0,Kyle E. Mitchell,https://github.com/kemitchell/validate-npm-package-license.js,1,true
 winston@2.1.1,,charlie.robbins@gmail.com,MIT,Charlie Robbins,https://github.com/winstonjs/winston,1,true
 wrappy@1.0.2,,i@izs.me,ISC,Isaac Z. Schlueter,https://github.com/npm/wrappy,1,true
-@connectedyard/phin-license-scanner@1.1.1,,,MIT,Scott Eklund,,1,false

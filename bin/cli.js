@@ -23,8 +23,9 @@
 	.option('-p, --prod', 'Categorize all dependenceis as production')
 	.option('-u, --unknowns', 'Log unknowns to the console as warnings')
 	.option('--config [filepath]', 'Provide an alternate config file' )
+	.option('-l, --list', 'List runners found in the config file')
 	.option('-r, --run [runner-key]', 'Execute a runner')
-	.option('--version', 'Outputs version and quits')
+	.option('--warningsOff', 'Suppress warning about licenses identified in the config file')
 	.arguments("[directories]", "Default is cwd")
 	.parse( process.argv );
 
@@ -45,6 +46,7 @@
 	options.skipBower = program.skipBower;
 	options.skipUpdate = program.skipUpdate;
 	options.unknowns = program.unknowns;
+	options.warnings = !program.warningsOff;
 
 	options.config = _loadLicenseConfigFile( program.config );
 
@@ -71,10 +73,27 @@
 		return jsondata;
 	}
 
+	if( program.list ){
+		console.log("Runners");
+		var runners = _.get( options.config, 'runners' );
+		var runnerNames = _.keys( runners );
+		if( _.size( runnerNames ) === 0 ){
+			console.log( "no runners founds in the config file");
+		}else{
+			console.log( runnerNames.join('\n') );
+		}
+		process.exit(0);
+	}
+
 	if( program.run ){
 		var runner = _.get( options.config.runners, program.run );
+		if( !runner ){
+			console.error(`Runner "${program.run}" not found in config file`);
+			process.exit(1);
+		}
 		return ScanRunner.run( runner, options );
 	}else{
+		// TODO: merge scanDirectories and run
 		return ScanRunner.scanDirectories( program.args, options );
 	}
 

@@ -31,6 +31,7 @@
     "ng-tags-input@3.0.0" : "MIT"
   },
   "excludedDependencies": [
+    "@connectedyard",
     "phin-admin",
     "phinternal-api",
     "phin-common-js",

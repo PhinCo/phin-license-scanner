@@ -10,10 +10,11 @@
 	var path = require('path');
 	var fs = require('fs');
 	require('colors');
-
+	var VERSION = require('../package.json').version;
 	var LICENSE_CONFIG_FILE_PATH = path.join( __dirname, "../config/license-config.json" );
 
 	program
+	.version( VERSION )
 	.option('--enableUnclean', "Don't require repo to be clean, default is clean required")
 	.option('--skipNode', "Don't scan for node dependencies, default is scan for node")
 	.option('--skipBower', "Don't scan for bower dependencies, default is scan for bower")
@@ -23,6 +24,7 @@
 	.option('-u, --unknowns', 'Log unknowns to the console as warnings')
 	.option('--config [filepath]', 'Provide an alternate config file' )
 	.option('-r, --run [runner-key]', 'Execute a runner')
+	.option('--version', 'Outputs version and quits')
 	.arguments("[directories]", "Default is cwd")
 	.parse( process.argv );
 

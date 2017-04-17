@@ -60,11 +60,11 @@
         }
       }
     },
-    "all": {
+    "all-phin": {
       "options": {
         "unknowns": true,
         "output" : {
-          "path" : "results.json",
+          "path" : "phin-licenses.json",
           "format" : "json"
         }
       },

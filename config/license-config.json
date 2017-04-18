@@ -28,9 +28,14 @@
     "log-driver@1.2.5" : "https://github.com/cainus/logdriver/blob/master/LICENSE",
     "esmangle-evaluator@1.0.0": "BSD Like: https://github.com/estools/esmangle/blob/7e4ee597/lib/evaluator.js"
   },
-  "warnOnLicenses": [
-    "GPL", "MIT", "BSD"
-  ],
+  "warnOnLicenses": {
+    "GPL": {
+      "pattern": "GPL"
+    },
+    "GNU": {
+      "pattern": "GNU"
+    }
+  },
   "bower": {
     "ng-tags-input@3.0.0" : "MIT"
   },
@@ -51,7 +56,7 @@
       "options": {
         "unknowns": true,
         "output": {
-          "path": "results.json",
+          "path": "test.json",
           "format": "json"
         }
       },

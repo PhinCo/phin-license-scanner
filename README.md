@@ -100,7 +100,7 @@ Example Runner:
 		},
 		directories: {
 			node-blower: {
-				"dev": true
+				"overrideCategorization": "dev"
 			}
 		}
 	}
@@ -131,4 +131,9 @@ or deactivated through command line arguments.
 # Resources for Licenses
     
 https://opensource.org/licenses
+
+Underlying scan is done through these modules:
+ * bower-license
+ * license-checker
+
 

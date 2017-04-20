@@ -5,11 +5,12 @@
 	'use strict';
 
 	var program = require('commander');
-	var ScanRunner = require('../lib/DirectoryScanRunner');
+	var ScanRunner = require('../lib/ScanRunner');
 	var _ = require('lodash');
 	var path = require('path');
 	var fs = require('fs');
 	require('colors');
+
 	var VERSION = require('../package.json').version;
 	var LICENSE_CONFIG_FILE_PATH = path.join( __dirname, "../config/license-config.json" );
 
@@ -25,6 +26,8 @@
 	.option('--config [filepath]', 'Provide an alternate config file' )
 	.option('-l, --list', 'List runners found in the config file')
 	.option('-r, --run [runner-key]', 'Execute a runner')
+	.option('-x, --nosave', 'Scan only, don\'t write directory license files')
+	.option('-o, --output [outputFile]', 'Output aggregate JSON file')
 	.option('--warningsOff', 'Suppress warning about licenses identified in the config file')
 	.arguments("[directories]", "Default is cwd")
 	.parse( process.argv );
@@ -36,19 +39,6 @@
 	}
 
 	if( !program.config ) program.config = LICENSE_CONFIG_FILE_PATH;
-	var options = {};
-
-	if( program.dev) options.overideCategorization = 'dev';
-	else if( program.prod ) options.overideCategorization = 'prod';
-
-	options.enableUnclean = program.enableUnclean;
-	options.skipNode = program.skipNode;
-	options.skipBower = program.skipBower;
-	options.skipUpdate = program.skipUpdate;
-	options.unknowns = program.unknowns;
-	options.warnings = !program.warningsOff;
-
-	options.config = _loadLicenseConfigFile( program.config );
 
 	function _loadLicenseConfigFile( filepath ){
 		var filedata = false;
@@ -73,28 +63,76 @@
 		return jsondata;
 	}
 
-	if( program.list ){
-		console.log("Runners");
+	function _listRunners(){
+		console.log( "Listing Runners in config file" );
 		var runners = _.get( options.config, 'runners' );
 		var runnerNames = _.keys( runners );
 		if( _.size( runnerNames ) === 0 ){
-			console.log( "no runners founds in the config file");
+			console.log( "no runners founds in the config file" );
 		}else{
 			console.log( runnerNames.join('\n') );
 		}
-		process.exit(0);
 	}
 
-	if( program.run ){
-		var runner = _.get( options.config.runners, program.run );
-		if( !runner ){
-			console.error(`Runner "${program.run}" not found in config file`);
-			process.exit(1);
+	function _buildScanRunner( options ){
+		var runner = false;
+
+		if( program.run ){
+			runner = _.get( options, `config.runners[${program.run}]` );
+			if( !runner ){
+				console.error(`Runner "${program.run}" not found in config file`);
+				process.exit(1);
+			}
+		}else{
+			runner = ScanRunner.buildRunnerWithDirectoriesAndOptions( program.args, options );
 		}
-		return ScanRunner.run( runner, options );
-	}else{
-		// TODO: merge scanDirectories and run
-		return ScanRunner.scanDirectories( program.args, options );
+		return new ScanRunner( runner, options );
 	}
+
+	function _buildOptions( config ){
+		var options = {};
+
+		if( program.dev) options.overrideCategorization = 'dev';
+		else if( program.prod ) options.overrideCategorization = 'prod';
+
+		options.enableUnclean = program.enableUnclean;
+		options.skipNode = program.skipNode;
+		options.skipBower = program.skipBower;
+		options.skipUpdate = program.skipUpdate;
+		options.unknowns = program.unknowns;
+		options.warnings = !program.warningsOff;
+		options.nosave = program.nosave;
+
+		if( program.output ){
+			options.output = { path: program.output, format: "json" };
+		}
+
+		options.config = config;
+
+		return options;
+	}
+
+	/*
+	 * Do It
+	 */
+
+	const config = _loadLicenseConfigFile( program.config );
+	const options = _buildOptions( config );
+
+	if( program.list ){
+		_listRunners();
+		return;
+	}
+
+	let scanRunner = _buildScanRunner( options );
+
+	if( options.nosave ){
+		console.log("Scanning Only. Not writing files\n".red );
+	}
+
+	return scanRunner.run()
+	.then( () => {
+		console.log( "Done.".green );
+	})
 
 })();

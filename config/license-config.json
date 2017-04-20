@@ -63,10 +63,10 @@
       },
       "directories": {
         "node-cli-auth": {
-          "dev": true
+          "overrideCategorization": "dev"
         },
         "node-intelhex": {
-          "dev": true
+          "overrideCategorization": "dev"
         }
       }
     },
@@ -80,7 +80,7 @@
       },
       "directories": {
         "node-cli-auth": {
-            "dev": true
+          "overrideCategorization": "dev"
         },
         "node-intelhex": {
             "dev": true
@@ -99,15 +99,15 @@
         "phin-ble": {
         },
         "phin-bridge-firmware/src": {
-            "dev": true
+          "overrideCategorization": "dev"
         },
         "phin-common-js": {
         },
         "phin-license-scanner": {
-            "dev": true
+          "overrideCategorization": "dev"
         },
         "phin-nrf51": {
-            "dev": true
+          "overrideCategorization": "dev"
         },
         "phin-service-network": {
         },
@@ -118,10 +118,10 @@
         "phinternal-api": {
         },
         "phirmware-test/nodejs": {
-            "dev": true
+          "overrideCategorization": "dev"
         },
         "phirmware-tool": {
-            "dev": true
+          "overrideCategorization": "dev"
         }
       }
     }

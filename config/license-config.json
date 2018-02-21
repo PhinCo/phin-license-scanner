@@ -23,7 +23,14 @@
     "inherit@2.2.2" : "MIT",
     "noptify@0.0.3" : "MIT",
     "retire@1.1.6" : "Apache V2.0",
+    "retire@0.3.8" : "Apache V2.0",
+    "retire@1.1.4" : "Apache V2.0",
     "taffydb@2.6.2" : "BSD",
+    "flexbuffer@0.0.6": "MIT",
+    "memjs@0.10.0": "GPLv3",
+    "opts@1.2.6": "BSD 2-Clause",
+    "map-stream@0.1.0": "MIT",
+    "chai-http@3.0.0": "MIT",
     "log-driver@1.2.4" : "https://github.com/cainus/logdriver/blob/master/LICENSE",
     "log-driver@1.2.5" : "https://github.com/cainus/logdriver/blob/master/LICENSE",
     "esmangle-evaluator@1.0.0": "BSD Like: https://github.com/estools/esmangle/blob/7e4ee597/lib/evaluator.js"
@@ -50,7 +57,12 @@
     "phin-advertisement-unpacker",
     "phin-bridge-firmware",
     "phin-angular",
-    "playground-fw"
+    "playground-fw",
+    "git+https://jkennedy1980@github.com/PhinCo/phinternal-api",
+    "phin-companies",
+    "phin-retailer-portal",
+    "phin-rig",
+    "phin-gateway"
   ],
   "runners": {
     "test" : {
@@ -122,7 +134,21 @@
         },
         "phirmware-tool": {
           "overrideCategorization": "dev"
-        }
+        },
+        "node-postgres": {},
+        "tests-sms-receiver": { "dev": true },
+        "phin-web-2": {},
+        "phin-dashboard": {},
+        "phin-wordpress-generator": { "dev": true },
+        "store-items": {},
+        "holy-sheet": { "dev": true },
+        "phin-amazon": {},
+        "companies-api": {},
+        "phin-retailer-portal": {},
+        "phin-rig": { "dev" : true },
+        "phin-gateway": {},
+        "phin-date-analyzer": { "dev": true }
+
       }
     }
   }

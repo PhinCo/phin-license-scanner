@@ -1,0 +1,4579 @@
+{
+  "dependencies": [
+    {
+      "name": "JsBarcode",
+      "publisher": "",
+      "licenses": [
+        "MIT"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "abbrev",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "accepts",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "acorn",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "acorn-jsx",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "ajv",
+      "publisher": "Evgeny Poberezkin",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "ajv-keywords",
+      "publisher": "Evgeny Poberezkin",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "align-text",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "alter",
+      "publisher": "Olov Lassus",
+      "licenses": "MIT",
+      "email": "olov.lassus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "amdefine",
+      "publisher": "James Burke",
+      "licenses": "BSD-3-Clause OR MIT",
+      "email": "jrburke@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "amqplib",
+      "publisher": "Michael Bridgen",
+      "licenses": "MIT",
+      "email": "mikeb@squaremobius.net",
+      "isProduction": false
+    },
+    {
+      "name": "angular",
+      "publisher": "",
+      "licenses": [
+        "MIT"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "angular-animate",
+      "publisher": "",
+      "licenses": [
+        "MIT"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "angular-assert-q-constructor",
+      "publisher": "Ben Drucker",
+      "licenses": "MIT",
+      "email": "bvdrucker@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "angular-markdown-directive",
+      "publisher": "",
+      "licenses": [
+        "MIT"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "angular-moment",
+      "publisher": "",
+      "licenses": [
+        "MIT"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "angular-sanitize",
+      "publisher": "",
+      "licenses": [
+        "MIT"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "angular-spinner",
+      "publisher": "",
+      "licenses": [
+        "MIT"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "angular-stripe",
+      "publisher": "Ben Drucker",
+      "licenses": "MIT",
+      "email": "bvdrucker@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "ansi-escapes",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "ansi-regex",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "ansi-styles",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "anymatch",
+      "publisher": "Elan Shanker",
+      "licenses": "ISC",
+      "isProduction": false
+    },
+    {
+      "name": "ap",
+      "publisher": "James Halliday",
+      "licenses": "MIT/X11",
+      "email": "mail@substack.net",
+      "isProduction": false
+    },
+    {
+      "name": "aproba",
+      "publisher": "Rebecca Turner",
+      "licenses": "ISC",
+      "email": "me@re-becca.org",
+      "isProduction": false
+    },
+    {
+      "name": "archy",
+      "publisher": "James Halliday",
+      "licenses": "MIT",
+      "email": "mail@substack.net",
+      "isProduction": false
+    },
+    {
+      "name": "are-we-there-yet",
+      "publisher": "Rebecca Turner",
+      "licenses": "ISC",
+      "isProduction": false
+    },
+    {
+      "name": "argparse",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "arr-diff",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "arr-flatten",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "array-differ",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "array-find-index",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "array-flatten",
+      "publisher": "Blake Embrey",
+      "licenses": "MIT",
+      "email": "hello@blakeembrey.com",
+      "isProduction": false
+    },
+    {
+      "name": "array-union",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "array-uniq",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "array-unique",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "arrify",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "asn1",
+      "publisher": "Mark Cavage",
+      "licenses": "MIT*",
+      "email": "mcavage@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "assert-plus",
+      "publisher": "Mark Cavage",
+      "licenses": "MIT",
+      "email": "mcavage@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "assertion-error",
+      "publisher": "Jake Luer",
+      "licenses": "MIT",
+      "email": "jake@qualiancy.com",
+      "isProduction": false
+    },
+    {
+      "name": "async",
+      "publisher": "Caolan McMahon",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "async-each",
+      "publisher": "Paul Miller",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "async-foreach",
+      "publisher": "\"Cowboy\" Ben Alman",
+      "licenses": "MIT*",
+      "isProduction": false
+    },
+    {
+      "name": "asynckit",
+      "publisher": "Alex Indigo",
+      "licenses": "MIT",
+      "email": "iam@alexindigo.com",
+      "isProduction": false
+    },
+    {
+      "name": "aws-sdk",
+      "publisher": "Amazon Web Services",
+      "licenses": "Apache 2.0",
+      "isProduction": false
+    },
+    {
+      "name": "aws-sign2",
+      "publisher": "Mikeal Rogers",
+      "licenses": "Apache V2.0",
+      "email": "mikeal.rogers@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "aws4",
+      "publisher": "Michael Hart",
+      "licenses": "MIT",
+      "email": "michael.hart.au@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "axios",
+      "publisher": "Matt Zabriskie",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "babel-code-frame",
+      "publisher": "Sebastian McKenzie",
+      "licenses": "MIT",
+      "email": "sebmck@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "balanced-match",
+      "publisher": "Julian Gruber",
+      "licenses": "MIT",
+      "email": "mail@juliangruber.com",
+      "isProduction": false
+    },
+    {
+      "name": "base64-url",
+      "publisher": "@joaquimserafim",
+      "licenses": "ISC",
+      "isProduction": false
+    },
+    {
+      "name": "base64url",
+      "publisher": "Brian J Brennan",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "bcrypt-pbkdf",
+      "licenses": "BSD-4-Clause",
+      "isProduction": false
+    },
+    {
+      "name": "beeper",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "binary-extensions",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "bitsyntax",
+      "publisher": "Michael Bridgen",
+      "licenses": "MIT",
+      "email": "<mikeb@squaremobius.net",
+      "isProduction": false
+    },
+    {
+      "name": "block-stream",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "bluebird",
+      "publisher": "Petka Antonov",
+      "licenses": "MIT",
+      "email": "petka_antonov@hotmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "body-parser",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "boom",
+      "publisher": "Eran Hammer",
+      "licenses": "BSD",
+      "email": "eran@hueniverse.com",
+      "isProduction": false
+    },
+    {
+      "name": "bootstrap-sass",
+      "publisher": "",
+      "licenses": [
+        "MIT"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "bower",
+      "publisher": "Twitter",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "brace-expansion",
+      "publisher": "Julian Gruber",
+      "licenses": "MIT",
+      "email": "mail@juliangruber.com",
+      "isProduction": false
+    },
+    {
+      "name": "braces",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "browserify-zlib",
+      "publisher": "Devon Govett",
+      "licenses": "MIT",
+      "email": "devongovett@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "buffer-equal-constant-time",
+      "publisher": "GoInstant Inc., a salesforce.com company",
+      "licenses": "BSD-3-Clause",
+      "isProduction": false
+    },
+    {
+      "name": "buffer-more-ints",
+      "publisher": "David Wragg",
+      "licenses": "MIT*",
+      "email": "david@wragg.org",
+      "isProduction": false
+    },
+    {
+      "name": "buffer-shims",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "buffer-writer",
+      "publisher": "Brian M. Carlson",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "builtin-modules",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "bytes",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "c3",
+      "publisher": "",
+      "licenses": [
+        "MIT"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "caller-path",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "callsites",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "caman",
+      "publisher": "",
+      "licenses": [
+        "MIT*"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "camelcase",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "camelcase-keys",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "camelize",
+      "publisher": "James Halliday",
+      "licenses": "MIT",
+      "email": "mail@substack.net",
+      "isProduction": false
+    },
+    {
+      "name": "caseless",
+      "publisher": "Mikeal Rogers",
+      "licenses": "Apache-2.0",
+      "email": "mikeal.rogers@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "center-align",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "chai",
+      "publisher": "Jake Luer",
+      "licenses": "MIT",
+      "email": "jake@alogicalparadox.com",
+      "isProduction": false
+    },
+    {
+      "name": "chai-http",
+      "publisher": "Jake Luer",
+      "licenses": "MIT*",
+      "email": "jake@alogicalparadox.com",
+      "isProduction": false
+    },
+    {
+      "name": "chai-passport-strategy",
+      "publisher": "Jared Hanson",
+      "licenses": "MIT",
+      "email": "jaredhanson@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "chalk",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "chardet",
+      "publisher": "Dmitry Shirokov",
+      "licenses": "MIT",
+      "email": "deadrunk@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "chokidar",
+      "publisher": "Paul Miller",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "circular-json",
+      "publisher": "Andrea Giammarchi",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "cli",
+      "publisher": "Chris O'Hara",
+      "licenses": "MIT",
+      "email": "cohara87@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "cli-color",
+      "publisher": "Mariusz Nowak",
+      "licenses": "MIT",
+      "email": "medyk@medikoo.com",
+      "isProduction": false
+    },
+    {
+      "name": "cli-cursor",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "cli-table",
+      "publisher": "Guillermo Rauch",
+      "licenses": "MIT",
+      "email": "guillermo@learnboost.com",
+      "isProduction": false
+    },
+    {
+      "name": "cli-width",
+      "publisher": "Ilya Radchenko",
+      "licenses": "ISC",
+      "email": "ilya@burstcreations.com",
+      "isProduction": false
+    },
+    {
+      "name": "cliui",
+      "publisher": "Ben Coe",
+      "licenses": "ISC",
+      "email": "ben@npmjs.com",
+      "isProduction": false
+    },
+    {
+      "name": "clone",
+      "publisher": "Paul Vorbach",
+      "licenses": "MIT",
+      "email": "paul@vorba.ch",
+      "isProduction": false
+    },
+    {
+      "name": "clone-stats",
+      "publisher": "Hugh Kennedy",
+      "licenses": "MIT",
+      "email": "hughskennedy@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "co",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "code-point-at",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "coffee-script",
+      "publisher": "Jeremy Ashkenas",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "color-convert",
+      "publisher": "Heather Arthur",
+      "licenses": "MIT",
+      "email": "fayearthur@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "color-name",
+      "publisher": "DY",
+      "licenses": "MIT",
+      "email": "dfcreative@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "colors",
+      "publisher": "Marak Squires",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "combined-stream",
+      "publisher": "Felix Geisendörfer",
+      "licenses": "MIT*",
+      "email": "felix@debuggable.com",
+      "isProduction": false
+    },
+    {
+      "name": "commander",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "component-emitter",
+      "licenses": "MIT*",
+      "isProduction": false
+    },
+    {
+      "name": "compressible",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "compression",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "concat-map",
+      "publisher": "James Halliday",
+      "licenses": "MIT",
+      "email": "mail@substack.net",
+      "isProduction": false
+    },
+    {
+      "name": "concat-stream",
+      "publisher": "Max Ogden",
+      "licenses": "MIT",
+      "email": "max@maxogden.com",
+      "isProduction": false
+    },
+    {
+      "name": "config-chain",
+      "publisher": "Dominic Tarr",
+      "licenses": "MIT",
+      "email": "dominic.tarr@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "connect",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "connect-flash",
+      "publisher": "Jared Hanson",
+      "licenses": "MIT",
+      "email": "jaredhanson@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "connect-redis",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "console-control-strings",
+      "publisher": "Rebecca Turner",
+      "licenses": "ISC",
+      "email": "me@re-becca.org",
+      "isProduction": false
+    },
+    {
+      "name": "consolidate",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "content-disposition",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "content-security-policy-builder",
+      "publisher": "Evan Hahn",
+      "licenses": "MIT",
+      "email": "me@evanhahn.com",
+      "isProduction": false
+    },
+    {
+      "name": "content-type",
+      "publisher": "Douglas Christopher Wilson",
+      "licenses": "MIT",
+      "email": "doug@somethingdoug.com",
+      "isProduction": false
+    },
+    {
+      "name": "convert-source-map",
+      "publisher": "Thorsten Lorenz",
+      "licenses": "MIT",
+      "email": "thlorenz@gmx.de",
+      "isProduction": false
+    },
+    {
+      "name": "cookie",
+      "publisher": "Roman Shtylman",
+      "licenses": "MIT",
+      "email": "shtylman@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "cookie-parser",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "cookie-signature",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@learnboost.com",
+      "isProduction": false
+    },
+    {
+      "name": "cookiejar",
+      "publisher": "bradleymeck",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "core-util-is",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "MIT",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "cors",
+      "publisher": "Troy Goode",
+      "licenses": "MIT",
+      "email": "troygoode@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "crc",
+      "publisher": "Alex Gorbatchev",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "cross-env",
+      "publisher": "Kent C. Dodds",
+      "licenses": "MIT",
+      "email": "kent@doddsfamily.us",
+      "isProduction": false
+    },
+    {
+      "name": "cross-spawn",
+      "publisher": "IndigoUnited",
+      "licenses": "MIT",
+      "email": "hello@indigounited.com",
+      "isProduction": false
+    },
+    {
+      "name": "cryptiles",
+      "publisher": "Eran Hammer",
+      "licenses": "BSD",
+      "email": "eran@hueniverse.com",
+      "isProduction": false
+    },
+    {
+      "name": "csrf",
+      "publisher": "Jonathan Ong",
+      "licenses": "MIT",
+      "email": "me@jongleberry.com",
+      "isProduction": false
+    },
+    {
+      "name": "csurf",
+      "publisher": "Jonathan Ong",
+      "licenses": "MIT",
+      "email": "me@jongleberry.com",
+      "isProduction": false
+    },
+    {
+      "name": "ctype",
+      "publisher": "Robert Mustacchi",
+      "licenses": "MIT",
+      "email": "rm@fingolfin.org",
+      "isProduction": false
+    },
+    {
+      "name": "currently-unhandled",
+      "publisher": "James Talmage",
+      "licenses": "MIT",
+      "email": "james@talmage.io",
+      "isProduction": false
+    },
+    {
+      "name": "cycle",
+      "licenses": "Public Domain (https://github.com/dscape/cycle)",
+      "isProduction": false
+    },
+    {
+      "name": "d",
+      "publisher": "Mariusz Nowak",
+      "licenses": "MIT",
+      "email": "medyk@medikoo.com",
+      "isProduction": false
+    },
+    {
+      "name": "d3",
+      "publisher": "",
+      "licenses": [
+        "MIT*"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "dargs",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "dashdash",
+      "publisher": "Trent Mick",
+      "licenses": "MIT",
+      "email": "trentm@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "dasherize",
+      "publisher": "Shahar Talmi",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "dashify",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "dat-gui",
+      "publisher": "",
+      "licenses": [
+        "Apache License, Version 2.0"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "dateformat",
+      "publisher": "Steven Levithan",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "debug",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "decamelize",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "deep-eql",
+      "publisher": "Jake Luer",
+      "licenses": "MIT",
+      "email": "jake@alogicalparadox.com",
+      "isProduction": false
+    },
+    {
+      "name": "deep-extend",
+      "publisher": "Viacheslav Lotsmanov",
+      "licenses": "MIT",
+      "email": "lotsmanov89@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "deep-is",
+      "publisher": "Thorsten Lorenz",
+      "licenses": "MIT",
+      "email": "thlorenz@gmx.de",
+      "isProduction": false
+    },
+    {
+      "name": "defaults",
+      "publisher": "Elijah Insua",
+      "licenses": "MIT",
+      "email": "tmpvar@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "define-properties",
+      "publisher": "Jordan Harband",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "del",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "delayed-stream",
+      "publisher": "Felix Geisendörfer",
+      "licenses": "MIT*",
+      "email": "felix@debuggable.com",
+      "isProduction": false
+    },
+    {
+      "name": "delegates",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "depd",
+      "publisher": "Douglas Christopher Wilson",
+      "licenses": "MIT",
+      "email": "doug@somethingdoug.com",
+      "isProduction": false
+    },
+    {
+      "name": "deprecated",
+      "publisher": "Fractal",
+      "licenses": "MIT",
+      "email": "contact@wearefractal.com",
+      "isProduction": false
+    },
+    {
+      "name": "destroy",
+      "publisher": "Jonathan Ong",
+      "licenses": "MIT",
+      "email": "me@jongleberry.com",
+      "isProduction": false
+    },
+    {
+      "name": "detect-file",
+      "publisher": "Brian Woodward",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "diff",
+      "licenses": "BSD",
+      "isProduction": false
+    },
+    {
+      "name": "dns-prefetch-control",
+      "publisher": "Evan Hahn",
+      "licenses": "MIT",
+      "email": "me@evanhahn.com",
+      "isProduction": false
+    },
+    {
+      "name": "doctrine",
+      "licenses": "Apache-2.0",
+      "isProduction": false
+    },
+    {
+      "name": "dont-sniff-mimetype",
+      "publisher": "Adam Baldwin",
+      "licenses": "MIT",
+      "email": "baldwin@andyet.net",
+      "isProduction": false
+    },
+    {
+      "name": "dot-prop",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "dottie",
+      "publisher": "Mick Hansen",
+      "licenses": "MIT*",
+      "email": "maker@mhansen.io",
+      "isProduction": false
+    },
+    {
+      "name": "double-ended-queue",
+      "publisher": "Petka Antonov",
+      "licenses": "MIT",
+      "email": "petka_antonov@hotmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "duplexer2",
+      "publisher": "Conrad Pankoff",
+      "licenses": "BSD",
+      "email": "deoxxa@fknsrs.biz",
+      "isProduction": false
+    },
+    {
+      "name": "dustjs-helpers",
+      "publisher": "Aleksander Williams",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "dustjs-linkedin",
+      "publisher": "Aleksander Williams",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "ecc-jsbn",
+      "publisher": "Jeremie Miller",
+      "licenses": "MIT",
+      "email": "jeremie@jabber.org",
+      "isProduction": false
+    },
+    {
+      "name": "ecdsa-sig-formatter",
+      "publisher": "D2L Corporation",
+      "licenses": "Apache-2.0",
+      "isProduction": false
+    },
+    {
+      "name": "editorconfig",
+      "publisher": "EditorConfig Team",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "ee-first",
+      "publisher": "Jonathan Ong",
+      "licenses": "MIT",
+      "email": "me@jongleberry.com",
+      "isProduction": false
+    },
+    {
+      "name": "encodeurl",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "end-of-stream",
+      "publisher": "Mathias Buus",
+      "licenses": "MIT",
+      "email": "mathiasbuus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "error-ex",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "es5-ext",
+      "publisher": "Mariusz Nowak",
+      "licenses": "MIT",
+      "email": "medyk@medikoo.com",
+      "isProduction": false
+    },
+    {
+      "name": "es6-iterator",
+      "publisher": "Mariusz Nowak",
+      "licenses": "MIT",
+      "email": "medyk@medikoo.com",
+      "isProduction": false
+    },
+    {
+      "name": "es6-symbol",
+      "publisher": "Mariusz Nowak",
+      "licenses": "MIT",
+      "email": "medyk@medikoo.com",
+      "isProduction": false
+    },
+    {
+      "name": "es6-weak-map",
+      "publisher": "Mariusz Nowak",
+      "licenses": "MIT",
+      "email": "medyk@medikoo.com",
+      "isProduction": false
+    },
+    {
+      "name": "escape-html",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "escape-string-regexp",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "eslint",
+      "publisher": "Nicholas C. Zakas",
+      "licenses": "MIT",
+      "email": "nicholas+npm@nczconsulting.com",
+      "isProduction": false
+    },
+    {
+      "name": "eslint-plugin-phin",
+      "licenses": "NONE",
+      "isProduction": false
+    },
+    {
+      "name": "eslint-scope",
+      "licenses": "BSD-2-Clause",
+      "isProduction": false
+    },
+    {
+      "name": "eslint-visitor-keys",
+      "publisher": "Toru Nagashima",
+      "licenses": "Apache-2.0",
+      "isProduction": false
+    },
+    {
+      "name": "espree",
+      "publisher": "Nicholas C. Zakas",
+      "licenses": "BSD-2-Clause",
+      "email": "nicholas+npm@nczconsulting.com",
+      "isProduction": false
+    },
+    {
+      "name": "esprima",
+      "licenses": "BSD",
+      "isProduction": false
+    },
+    {
+      "name": "esquery",
+      "publisher": "Joel Feenstra",
+      "licenses": "BSD",
+      "email": "jrfeenst+esquery@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "esrecurse",
+      "licenses": "BSD-2-Clause",
+      "isProduction": false
+    },
+    {
+      "name": "estraverse",
+      "licenses": "BSD-2-Clause",
+      "isProduction": false
+    },
+    {
+      "name": "esutils",
+      "licenses": "BSD",
+      "isProduction": false
+    },
+    {
+      "name": "etag",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "event-emitter",
+      "publisher": "Mariusz Nowak",
+      "licenses": "MIT",
+      "email": "medyk@medikoo.com",
+      "isProduction": false
+    },
+    {
+      "name": "eventemitter2",
+      "publisher": "hij1nx",
+      "licenses": "MIT",
+      "email": "paolo@async.ly",
+      "isProduction": false
+    },
+    {
+      "name": "exit",
+      "publisher": "\"Cowboy\" Ben Alman",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "expand-brackets",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "expand-range",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "expand-tilde",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "express",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "express-force-ssl",
+      "publisher": "Jeremy Battle",
+      "licenses": "MIT",
+      "email": "@complexcarb",
+      "isProduction": false
+    },
+    {
+      "name": "express-session",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "extend",
+      "publisher": "Stefan Thomas",
+      "licenses": "MIT*",
+      "email": "justmoon@members.fsf.org",
+      "isProduction": false
+    },
+    {
+      "name": "external-editor",
+      "publisher": "Kevin Gravier",
+      "licenses": "MIT",
+      "email": "kevin@mrkmg.com",
+      "isProduction": false
+    },
+    {
+      "name": "extglob",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "extsprintf",
+      "licenses": "MIT*",
+      "isProduction": false
+    },
+    {
+      "name": "eyes",
+      "publisher": "Alexis Sellier",
+      "licenses": "MIT",
+      "email": "self@cloudhead.net",
+      "isProduction": false
+    },
+    {
+      "name": "fancy-log",
+      "publisher": "Blaine Bublitz",
+      "licenses": "MIT",
+      "email": "blaine.bublitz@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "fast-deep-equal",
+      "publisher": "Evgeny Poberezkin",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "fast-json-stable-stringify",
+      "publisher": "James Halliday",
+      "licenses": "MIT",
+      "email": "mail@substack.net",
+      "isProduction": false
+    },
+    {
+      "name": "fast-levenshtein",
+      "publisher": "Ramesh Nair",
+      "licenses": "MIT",
+      "email": "ram@hiddentao.com",
+      "isProduction": false
+    },
+    {
+      "name": "faye-websocket",
+      "publisher": "James Coglan",
+      "licenses": "MIT",
+      "email": "jcoglan@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "fd-slicer",
+      "publisher": "Andrew Kelley",
+      "licenses": "MIT",
+      "email": "superjoe30@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "figures",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "file-entry-cache",
+      "publisher": "Roy Riojas",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "filename-regex",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "fill-range",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "finalhandler",
+      "publisher": "Douglas Christopher Wilson",
+      "licenses": "MIT",
+      "email": "doug@somethingdoug.com",
+      "isProduction": false
+    },
+    {
+      "name": "find-index",
+      "publisher": "James Friend",
+      "licenses": "MIT",
+      "email": "james@jsdf.co",
+      "isProduction": false
+    },
+    {
+      "name": "find-up",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "findit2",
+      "publisher": "Andrew Kelley",
+      "licenses": "MIT",
+      "email": "superjoe30@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "findup-sync",
+      "publisher": "\"Cowboy\" Ben Alman",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "fined",
+      "publisher": "JS CLI Team",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "first-chunk-stream",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "flagged-respawn",
+      "publisher": "Tyler Kellen",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "flat",
+      "publisher": "Hugh Kennedy",
+      "licenses": "BSD-3-Clause",
+      "email": "hughskennedy@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "flat-cache",
+      "publisher": "Roy Riojas",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "follow-redirects",
+      "publisher": "Olivier Lalonde",
+      "licenses": "MIT",
+      "email": "olalonde@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "for-in",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "for-own",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "foreach",
+      "publisher": "Manuel Stofer",
+      "licenses": "MIT",
+      "email": "manuel@takimata.ch",
+      "isProduction": false
+    },
+    {
+      "name": "forever-agent",
+      "publisher": "Mikeal Rogers",
+      "licenses": "Apache*",
+      "email": "mikeal.rogers@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "form-data",
+      "publisher": "Felix Geisendörfer",
+      "licenses": "MIT",
+      "email": "felix@debuggable.com",
+      "isProduction": false
+    },
+    {
+      "name": "formidable",
+      "licenses": "MIT*",
+      "isProduction": false
+    },
+    {
+      "name": "forwarded",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "frameguard",
+      "publisher": "Adam Baldwin",
+      "licenses": "MIT",
+      "email": "baldwin@andyet.net",
+      "isProduction": false
+    },
+    {
+      "name": "fresh",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "fs-coalesce",
+      "publisher": "Joshua Kennedy",
+      "licenses": "MIT",
+      "email": "josh@ponycode.com",
+      "isProduction": false
+    },
+    {
+      "name": "fs-exists-sync",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "fs-extra",
+      "publisher": "JP Richardson",
+      "licenses": "MIT",
+      "email": "jprichardson@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "fs.realpath",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "fsevents",
+      "publisher": "Philipp Dunkel",
+      "licenses": "MIT",
+      "email": "pip@pipobscure.com",
+      "isProduction": false
+    },
+    {
+      "name": "fstream",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "fstream-ignore",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "function-bind",
+      "publisher": "Raynos",
+      "licenses": "MIT",
+      "email": "raynos2@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "functional-red-black-tree",
+      "publisher": "Mikola Lysenko",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "gauge",
+      "publisher": "Rebecca Turner",
+      "licenses": "ISC",
+      "email": "me@re-becca.org",
+      "isProduction": false
+    },
+    {
+      "name": "gaze",
+      "publisher": "Kyle Robinson Young",
+      "licenses": "MIT",
+      "email": "kyle@dontkry.com",
+      "isProduction": false
+    },
+    {
+      "name": "generate-function",
+      "publisher": "Mathias Buus",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "generate-object-property",
+      "publisher": "Mathias Buus",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "generic-pool",
+      "publisher": "James Cooper",
+      "licenses": "MIT",
+      "email": "james@bitmechanic.com",
+      "isProduction": false
+    },
+    {
+      "name": "get-caller-file",
+      "publisher": "Stefan Penner",
+      "licenses": "ISC",
+      "isProduction": false
+    },
+    {
+      "name": "get-stdin",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "getobject",
+      "publisher": "\"Cowboy\" Ben Alman",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "getpass",
+      "publisher": "Alex Wilson",
+      "licenses": "MIT",
+      "email": "alex.wilson@joyent.com",
+      "isProduction": false
+    },
+    {
+      "name": "glob",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "BSD",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "glob-base",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "glob-parent",
+      "publisher": "Elan Shanker",
+      "licenses": "ISC",
+      "isProduction": false
+    },
+    {
+      "name": "glob-stream",
+      "publisher": "Fractal",
+      "licenses": "MIT",
+      "email": "contact@wearefractal.com",
+      "isProduction": false
+    },
+    {
+      "name": "glob-watcher",
+      "publisher": "Fractal",
+      "licenses": "MIT",
+      "email": "contact@wearefractal.com",
+      "isProduction": false
+    },
+    {
+      "name": "glob2base",
+      "publisher": "Fractal",
+      "licenses": "MIT",
+      "email": "contact@wearefractal.com",
+      "isProduction": false
+    },
+    {
+      "name": "global-modules",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "global-prefix",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "globals",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "globby",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "globule",
+      "publisher": "\"Cowboy\" Ben Alman",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "glogg",
+      "publisher": "Blaine Bublitz",
+      "licenses": "MIT",
+      "email": "blaine@iceddev.com",
+      "isProduction": false
+    },
+    {
+      "name": "graceful-fs",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "BSD",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "graceful-readlink",
+      "publisher": "zhiyelee",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "growl",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "grunt",
+      "publisher": "\"Cowboy\" Ben Alman",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "grunt-contrib-concat",
+      "publisher": "Grunt Team",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "grunt-contrib-sass",
+      "publisher": "Grunt Team",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "grunt-contrib-uglify",
+      "publisher": "Grunt Team",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "grunt-contrib-watch",
+      "publisher": "Grunt Team",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "grunt-legacy-log",
+      "publisher": "\"Cowboy\" Ben Alman",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "grunt-legacy-log-utils",
+      "publisher": "\"Cowboy\" Ben Alman",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "grunt-legacy-util",
+      "publisher": "\"Cowboy\" Ben Alman",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "grunt-ng-annotate",
+      "publisher": "Michał Gołębiowski",
+      "licenses": "MIT",
+      "email": "m.goleb@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "grunt-run",
+      "publisher": "Spencer Alger",
+      "licenses": "MIT",
+      "email": "spencer@spalger.com",
+      "isProduction": false
+    },
+    {
+      "name": "gulp",
+      "publisher": "Fractal",
+      "licenses": "MIT",
+      "email": "contact@wearefractal.com",
+      "isProduction": false
+    },
+    {
+      "name": "gulp-help",
+      "publisher": "Chris Montgomery",
+      "licenses": "MIT",
+      "email": "chr.montgomery@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "gulp-util",
+      "publisher": "Fractal",
+      "licenses": "MIT",
+      "email": "contact@wearefractal.com",
+      "isProduction": false
+    },
+    {
+      "name": "gulplog",
+      "publisher": "Blaine Bublitz",
+      "licenses": "MIT",
+      "email": "blaine@iceddev.com",
+      "isProduction": false
+    },
+    {
+      "name": "gzip-size",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "har-validator",
+      "publisher": "Ahmad Nassri",
+      "licenses": "ISC",
+      "email": "ahmad@ahmadnassri.com",
+      "isProduction": false
+    },
+    {
+      "name": "has-ansi",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "has-flag",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "has-gulplog",
+      "publisher": "Blaine Bublitz",
+      "licenses": "MIT",
+      "email": "blaine@iceddev.com",
+      "isProduction": false
+    },
+    {
+      "name": "has-unicode",
+      "publisher": "Rebecca Turner",
+      "licenses": "ISC",
+      "email": "me@re-becca.org",
+      "isProduction": false
+    },
+    {
+      "name": "hawk",
+      "publisher": "Eran Hammer",
+      "licenses": "BSD",
+      "email": "eran@hueniverse.com",
+      "isProduction": false
+    },
+    {
+      "name": "helmet",
+      "publisher": "Adam Baldwin",
+      "licenses": "MIT",
+      "email": "baldwin@andyet.net",
+      "isProduction": false
+    },
+    {
+      "name": "helmet-csp",
+      "publisher": "Adam Baldwin",
+      "licenses": "MIT",
+      "email": "baldwin@andyet.net",
+      "isProduction": false
+    },
+    {
+      "name": "hide-powered-by",
+      "publisher": "Adam Baldwin",
+      "licenses": "MIT",
+      "email": "baldwin@andyet.net",
+      "isProduction": false
+    },
+    {
+      "name": "hoek",
+      "publisher": "Eran Hammer",
+      "licenses": "BSD",
+      "email": "eran@hueniverse.com",
+      "isProduction": false
+    },
+    {
+      "name": "homedir-polyfill",
+      "publisher": "Brian Woodward",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "hooker",
+      "publisher": "\"Cowboy\" Ben Alman",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "hosted-git-info",
+      "publisher": "Rebecca Turner",
+      "licenses": "ISC",
+      "email": "me@re-becca.org",
+      "isProduction": false
+    },
+    {
+      "name": "hpkp",
+      "publisher": "Adam Baldwin",
+      "licenses": "MIT",
+      "email": "baldwin@andyet.net",
+      "isProduction": false
+    },
+    {
+      "name": "hsts",
+      "publisher": "Adam Baldwin",
+      "licenses": "MIT",
+      "email": "baldwin@andyet.net",
+      "isProduction": false
+    },
+    {
+      "name": "http-errors",
+      "publisher": "Jonathan Ong",
+      "licenses": "MIT",
+      "email": "me@jongleberry.com",
+      "isProduction": false
+    },
+    {
+      "name": "http-signature",
+      "publisher": "Joyent, Inc",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "iconv-lite",
+      "publisher": "Alexander Shtuchkin",
+      "licenses": "MIT",
+      "email": "ashtuchkin@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "ienoopen",
+      "publisher": "Adam Baldwin",
+      "licenses": "MIT",
+      "email": "baldwin@andyet.net",
+      "isProduction": false
+    },
+    {
+      "name": "ignore",
+      "publisher": "kael",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "imurmurhash",
+      "publisher": "Jens Taylor",
+      "licenses": "MIT",
+      "email": "jensyt@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "in-publish",
+      "publisher": "Rebecca Turner",
+      "licenses": "ISC",
+      "email": "me@re-becca.org",
+      "isProduction": false
+    },
+    {
+      "name": "indent-string",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "inflection",
+      "publisher": "dreamerslab",
+      "licenses": "MIT",
+      "email": "ben@dreamerslab.com",
+      "isProduction": false
+    },
+    {
+      "name": "inflight",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "inherits",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC*",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "ini",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "inquirer",
+      "publisher": "Simon Boudrias",
+      "licenses": "MIT",
+      "email": "admin@simonboudrias.com",
+      "isProduction": false
+    },
+    {
+      "name": "interpret",
+      "publisher": "Tyler Kellen",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "invert-kv",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "ipaddr.js",
+      "publisher": "whitequark",
+      "licenses": "MIT",
+      "email": "whitequark@whitequark.org",
+      "isProduction": false
+    },
+    {
+      "name": "is-absolute",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-arrayish",
+      "publisher": "Qix",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-binary-path",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "is-buffer",
+      "publisher": "Feross Aboukhadijeh",
+      "licenses": "MIT",
+      "email": "feross@feross.org",
+      "isProduction": false
+    },
+    {
+      "name": "is-builtin-module",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "is-dotfile",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-equal-shallow",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-extendable",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-extglob",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-finite",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "is-fullwidth-code-point",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "is-glob",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-my-json-valid",
+      "publisher": "Mathias Buus",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-number",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-path-cwd",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "is-path-in-cwd",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "is-path-inside",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "is-posix-bracket",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-primitive",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-promise",
+      "publisher": "ForbesLindesay",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-property",
+      "publisher": "Mikola Lysenko",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-relative",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-resolvable",
+      "publisher": "Shinnosuke Watanabe",
+      "licenses": "ISC",
+      "isProduction": false
+    },
+    {
+      "name": "is-typedarray",
+      "publisher": "Hugh Kennedy",
+      "licenses": "MIT",
+      "email": "hughskennedy@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "is-unc-path",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-utf8",
+      "publisher": "wayfind",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "is-windows",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "isarray",
+      "publisher": "Julian Gruber",
+      "licenses": "MIT",
+      "email": "mail@juliangruber.com",
+      "isProduction": false
+    },
+    {
+      "name": "isemail",
+      "publisher": "Eli Skeggs",
+      "licenses": "BSD-2-Clause",
+      "email": "skeggse@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "isexe",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "isobject",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "isstream",
+      "publisher": "Rod Vagg",
+      "licenses": "MIT",
+      "email": "rod@vagg.org",
+      "isProduction": false
+    },
+    {
+      "name": "jade",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "jodid25519",
+      "publisher": "Michele Bini, Ron Garret, Guy K. Kloss",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "joi",
+      "licenses": "BSD-3-Clause",
+      "isProduction": false
+    },
+    {
+      "name": "jquery",
+      "publisher": "",
+      "licenses": [
+        "MIT"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "jquery.payment",
+      "publisher": "",
+      "licenses": [
+        "MIT"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "js-base64",
+      "publisher": "Dan Kogai",
+      "licenses": "BSD-3-Clause",
+      "isProduction": false
+    },
+    {
+      "name": "js-beautify",
+      "publisher": "Einar Lielmanis",
+      "licenses": "MIT",
+      "email": "einar@jsbeautifier.org",
+      "isProduction": false
+    },
+    {
+      "name": "js-tokens",
+      "publisher": "Simon Lydell",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "js-yaml",
+      "publisher": "Dervus Grim",
+      "licenses": "MIT",
+      "email": "dervus@lavabit.com",
+      "isProduction": false
+    },
+    {
+      "name": "jsbn",
+      "publisher": "Tom Wu",
+      "licenses": "BSD",
+      "isProduction": false
+    },
+    {
+      "name": "json-schema",
+      "publisher": "Kris Zyp",
+      "licenses": [
+        "AFLv2.1",
+        "BSD"
+      ],
+      "isProduction": false
+    },
+    {
+      "name": "json-schema-traverse",
+      "publisher": "Evgeny Poberezkin",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "json-stable-stringify-without-jsonify",
+      "publisher": "James Halliday",
+      "licenses": "MIT",
+      "email": "mail@substack.net",
+      "isProduction": false
+    },
+    {
+      "name": "json-stringify-safe",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "json2csv",
+      "publisher": "Mirco Zeiss",
+      "licenses": "MIT",
+      "email": "mirco.zeiss@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "jsonfile",
+      "publisher": "JP Richardson",
+      "licenses": "MIT",
+      "email": "jprichardson@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "jsonpointer",
+      "publisher": "Jan Lehnardt",
+      "licenses": "MIT",
+      "email": "jan@apache.org",
+      "isProduction": false
+    },
+    {
+      "name": "jsonwebtoken",
+      "publisher": "auth0",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "jsprim",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "jwa",
+      "publisher": "Brian J. Brennan",
+      "licenses": "MIT",
+      "email": "brianloveswords@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "jws",
+      "publisher": "Brian J Brennan",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "kind-of",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "lazy-cache",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "lcid",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "levn",
+      "publisher": "George Zahariev",
+      "licenses": "MIT",
+      "email": "z@georgezahariev.com",
+      "isProduction": false
+    },
+    {
+      "name": "liftoff",
+      "publisher": "Tyler Kellen",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "load-json-file",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash._baseassign",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash._basecopy",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash._basetostring",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash._basevalues",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash._bindcallback",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash._createassigner",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash._getnative",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash._isiterateecall",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash._reescape",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash._reevaluate",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash._reinterpolate",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash._root",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.assign",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.assignwith",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.clonedeep",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.escape",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.flatten",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.get",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.isarguments",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.isarray",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.isempty",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.isplainobject",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.isstring",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.keys",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.mapvalues",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.mergewith",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.once",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.pick",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.reduce",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.restparam",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.set",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.template",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.templatesettings",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lodash.uniq",
+      "publisher": "John-David Dalton",
+      "licenses": "MIT",
+      "email": "john.david.dalton@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "longest",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "loud-rejection",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "lru-cache",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "lru-queue",
+      "publisher": "Mariusz Nowak",
+      "licenses": "MIT",
+      "email": "medyk@medikoo.com",
+      "isProduction": false
+    },
+    {
+      "name": "map-cache",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "map-obj",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "maxmin",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "media-typer",
+      "publisher": "Douglas Christopher Wilson",
+      "licenses": "MIT",
+      "email": "doug@somethingdoug.com",
+      "isProduction": false
+    },
+    {
+      "name": "memoizee",
+      "publisher": "Mariusz Nowak",
+      "licenses": "MIT",
+      "email": "medikoo@medikoo.com",
+      "isProduction": false
+    },
+    {
+      "name": "meow",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "merge-descriptors",
+      "publisher": "Jonathan Ong",
+      "licenses": "MIT",
+      "email": "me@jongleberry.com",
+      "isProduction": false
+    },
+    {
+      "name": "methods",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "micromatch",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "mime",
+      "publisher": "Robert Kieffer",
+      "licenses": "MIT*",
+      "email": "robert@broofa.com",
+      "isProduction": false
+    },
+    {
+      "name": "mime-db",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "mime-types",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "mimic-fn",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "minimatch",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "MIT",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "minimist",
+      "publisher": "James Halliday",
+      "licenses": "MIT",
+      "email": "mail@substack.net",
+      "isProduction": false
+    },
+    {
+      "name": "mkdirp",
+      "publisher": "James Halliday",
+      "licenses": "MIT/X11",
+      "email": "mail@substack.net",
+      "isProduction": false
+    },
+    {
+      "name": "mocha",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "moment",
+      "publisher": "Iskren Ivov Chernev",
+      "licenses": "MIT",
+      "email": "iskren.chernev@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "moment-timezone",
+      "publisher": "Tim Wood",
+      "licenses": "MIT",
+      "email": "washwithcare@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "ms",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "multipipe",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "mute-stream",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "nan",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "natives",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "natural-compare",
+      "publisher": "Lauri Rooden",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "negotiator",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "next-tick",
+      "publisher": "Mariusz Nowak",
+      "licenses": "MIT",
+      "email": "medykk@medikoo.com",
+      "isProduction": false
+    },
+    {
+      "name": "ng-annotate",
+      "publisher": "Olov Lassus",
+      "licenses": "MIT",
+      "email": "olov.lassus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "ng-tags-input",
+      "publisher": "",
+      "licenses": "MIT",
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "ngmap",
+      "publisher": "",
+      "licenses": [
+        "MIT"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "nocache",
+      "publisher": "Adam Baldwin",
+      "licenses": "MIT",
+      "email": "baldwin@andyet.net",
+      "isProduction": false
+    },
+    {
+      "name": "node-gyp",
+      "publisher": "Nathan Rajlich",
+      "licenses": "MIT",
+      "email": "nathan@tootallnate.net",
+      "isProduction": false
+    },
+    {
+      "name": "node-pre-gyp",
+      "publisher": "Dane Springmeyer",
+      "licenses": "BSD-3-Clause",
+      "email": "dane@mapbox.com",
+      "isProduction": false
+    },
+    {
+      "name": "node-sass",
+      "publisher": "Andrew Nesbitt",
+      "licenses": "MIT",
+      "email": "andrewnez@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "node-usps",
+      "publisher": "David Ball",
+      "licenses": "BSD",
+      "email": "david@daball.me",
+      "isProduction": false
+    },
+    {
+      "name": "node-uuid",
+      "publisher": "Robert Kieffer",
+      "licenses": "MIT",
+      "email": "robert@broofa.com",
+      "isProduction": false
+    },
+    {
+      "name": "nopt",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "noptify",
+      "publisher": "mklabs",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "normalize-package-data",
+      "publisher": "Meryn Stol",
+      "licenses": "BSD-2-Clause",
+      "email": "merynstol@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "normalize-path",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "npmlog",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "number-is-nan",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "oauth-sign",
+      "publisher": "Mikeal Rogers",
+      "licenses": "Apache*",
+      "email": "mikeal.rogers@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "object-assign",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "object-keys",
+      "publisher": "Jordan Harband",
+      "licenses": "MIT",
+      "email": "ljharb@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "object.assign",
+      "publisher": "Jordan Harband",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "object.omit",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "on-finished",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "on-headers",
+      "publisher": "Douglas Christopher Wilson",
+      "licenses": "MIT",
+      "email": "doug@somethingdoug.com",
+      "isProduction": false
+    },
+    {
+      "name": "once",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "onetime",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "optimist",
+      "publisher": "James Halliday",
+      "licenses": "MIT/X11",
+      "email": "mail@substack.net",
+      "isProduction": false
+    },
+    {
+      "name": "optionator",
+      "publisher": "George Zahariev",
+      "licenses": "MIT",
+      "email": "z@georgezahariev.com",
+      "isProduction": false
+    },
+    {
+      "name": "orchestrator",
+      "publisher": "Rob Richardson",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "ordered-ast-traverse",
+      "publisher": "Olov Lassus",
+      "licenses": "MIT",
+      "email": "olov.lassus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "ordered-esprima-props",
+      "publisher": "Olov Lassus",
+      "licenses": "MIT",
+      "email": "olov.lassus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "ordered-read-streams",
+      "publisher": "Artem Medeusheyev",
+      "licenses": "MIT",
+      "email": "artem.medeusheyev@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "os-homedir",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "os-locale",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "os-tmpdir",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "osenv",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "packet-reader",
+      "publisher": "Brian M. Carlson",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "pako",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "papaparse",
+      "publisher": "",
+      "licenses": [
+        "MIT"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "parse-filepath",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "parse-glob",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "parse-json",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "parse-passwd",
+      "publisher": "Brian Woodward",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "parseurl",
+      "publisher": "Jonathan Ong",
+      "licenses": "MIT",
+      "email": "me@jongleberry.com",
+      "isProduction": false
+    },
+    {
+      "name": "passport",
+      "publisher": "Jared Hanson",
+      "licenses": "MIT",
+      "email": "jaredhanson@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "passport-local",
+      "publisher": "Jared Hanson",
+      "licenses": "MIT",
+      "email": "jaredhanson@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "passport-strategy",
+      "publisher": "Jared Hanson",
+      "licenses": "MIT",
+      "email": "jaredhanson@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "path-exists",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "path-is-absolute",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "path-is-inside",
+      "publisher": "Domenic Denicola",
+      "licenses": "(WTFPL OR MIT)",
+      "email": "d@domenic.me",
+      "isProduction": false
+    },
+    {
+      "name": "path-root",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "path-root-regex",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "path-to-regexp",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "path-type",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "pause",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT*",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "pend",
+      "publisher": "Andrew Kelley",
+      "licenses": "MIT",
+      "email": "superjoe30@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "pg",
+      "publisher": "Brian Carlson",
+      "licenses": "MIT",
+      "email": "brian.m.carlson@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "pg-connection-string",
+      "publisher": "Blaine Bublitz",
+      "licenses": "MIT",
+      "email": "blaine@iceddev.com",
+      "isProduction": false
+    },
+    {
+      "name": "pg-hstore",
+      "publisher": "Seth Carney",
+      "licenses": "MIT*",
+      "email": "scarney81@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "pg-pool",
+      "publisher": "Brian M. Carlson",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "pg-types",
+      "publisher": "Brian M. Carlson",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "pgpass",
+      "publisher": "Hannes Hörl",
+      "licenses": "MIT",
+      "email": "hannes.hoerl+pgpass@snowreporter.com",
+      "isProduction": false
+    },
+    {
+      "name": "phin-new-router",
+      "publisher": "",
+      "licenses": [
+        "Apache-2.0",
+        "Apache*"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "pify",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "pinkie",
+      "publisher": "Vsevolod Strukchinsky",
+      "licenses": "MIT",
+      "email": "floatdrop@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "pinkie-promise",
+      "publisher": "Vsevolod Strukchinsky",
+      "licenses": "MIT",
+      "email": "floatdrop@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "pkginfo",
+      "publisher": "Charlie Robbins",
+      "licenses": "MIT",
+      "email": "charlie.robbins@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "platform",
+      "publisher": "Benjamin Tan",
+      "licenses": "MIT",
+      "email": "demoneaux@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "pluralize",
+      "publisher": "Blake Embrey",
+      "licenses": "MIT",
+      "email": "hello@blakeembrey.com",
+      "isProduction": false
+    },
+    {
+      "name": "pony-config",
+      "publisher": "PonyCode Corporation",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "postgres-array",
+      "publisher": "Ben Drucker",
+      "licenses": "MIT",
+      "email": "bvdrucker@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "postgres-bytea",
+      "publisher": "Ben Drucker",
+      "licenses": "MIT",
+      "email": "bvdrucker@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "postgres-date",
+      "publisher": "Ben Drucker",
+      "licenses": "MIT",
+      "email": "bvdrucker@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "postgres-interval",
+      "publisher": "Ben Drucker",
+      "licenses": "MIT",
+      "email": "bvdrucker@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "pre-commit-helper",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "prelude-ls",
+      "publisher": "George Zahariev",
+      "licenses": "MIT",
+      "email": "z@georgezahariev.com",
+      "isProduction": false
+    },
+    {
+      "name": "preserve",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "pretty-bytes",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "pretty-hrtime",
+      "publisher": "Rob Richardson",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "process-nextick-args",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "progress",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "proto-list",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "proxy-addr",
+      "publisher": "Douglas Christopher Wilson",
+      "licenses": "MIT",
+      "email": "doug@somethingdoug.com",
+      "isProduction": false
+    },
+    {
+      "name": "pseudomap",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "punycode",
+      "publisher": "Mathias Bynens",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "qs",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT*",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "random-bytes",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "randomatic",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "range-parser",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "raw-body",
+      "publisher": "Jonathan Ong",
+      "licenses": "MIT",
+      "email": "me@jongleberry.com",
+      "isProduction": false
+    },
+    {
+      "name": "rc",
+      "publisher": "Dominic Tarr",
+      "licenses": "(BSD-2-Clause OR MIT OR Apache-2.0)",
+      "email": "dominic.tarr@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "read-pkg",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "read-pkg-up",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "readable-stream",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "MIT",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "readdirp",
+      "publisher": "Thorsten Lorenz",
+      "licenses": "MIT",
+      "email": "thlorenz@gmx.de",
+      "isProduction": false
+    },
+    {
+      "name": "rechoir",
+      "publisher": "Tyler Kellen",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "redefine",
+      "publisher": "Andrea Giammarchi",
+      "licenses": "MIT",
+      "email": "andrea.giammarchi@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "redent",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "redis",
+      "publisher": "Matt Ranney",
+      "licenses": "MIT",
+      "email": "mjr@ranney.com",
+      "isProduction": false
+    },
+    {
+      "name": "redis-commands",
+      "publisher": "luin",
+      "licenses": "MIT",
+      "email": "i@zihua.li",
+      "isProduction": false
+    },
+    {
+      "name": "redis-parser",
+      "publisher": "Ruben Bridgewater",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "reduce-component",
+      "licenses": "Apache, Version 2.0",
+      "isProduction": false
+    },
+    {
+      "name": "referrer-policy",
+      "publisher": "Evan Hahn",
+      "licenses": "MIT",
+      "email": "me@evanhahn.com",
+      "isProduction": false
+    },
+    {
+      "name": "regex-cache",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "repeat-element",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "repeat-string",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "repeating",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "replace-ext",
+      "publisher": "Fractal",
+      "licenses": "MIT",
+      "email": "contact@wearefractal.com",
+      "isProduction": false
+    },
+    {
+      "name": "request",
+      "publisher": "Mikeal Rogers",
+      "licenses": "Apache, Version 2.0",
+      "email": "mikeal.rogers@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "request-promise-core",
+      "publisher": "Nicolai Kamenzky",
+      "licenses": "ISC",
+      "isProduction": false
+    },
+    {
+      "name": "request-promise-native",
+      "publisher": "Nicolai Kamenzky",
+      "licenses": "ISC",
+      "isProduction": false
+    },
+    {
+      "name": "require-directory",
+      "publisher": "Troy Goode",
+      "licenses": "MIT",
+      "email": "troygoode@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "require-main-filename",
+      "publisher": "Ben Coe",
+      "licenses": "ISC",
+      "email": "ben@npmjs.com",
+      "isProduction": false
+    },
+    {
+      "name": "require-uncached",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "resolve",
+      "publisher": "James Halliday",
+      "licenses": "MIT",
+      "email": "mail@substack.net",
+      "isProduction": false
+    },
+    {
+      "name": "resolve-dir",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "resolve-from",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "restore-cursor",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "retry-as-promised",
+      "publisher": "Mick Hansen",
+      "licenses": "MIT",
+      "email": "maker@mhansen.io",
+      "isProduction": false
+    },
+    {
+      "name": "right-align",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "rimraf",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "MIT",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "rndm",
+      "publisher": "Jonathan Ong",
+      "licenses": "MIT",
+      "email": "me@jongleberry.com",
+      "isProduction": false
+    },
+    {
+      "name": "run-async",
+      "publisher": "Simon Boudrias",
+      "licenses": "MIT",
+      "email": "admin@simonboudrias.com",
+      "isProduction": false
+    },
+    {
+      "name": "rx-lite",
+      "publisher": "Cloud Programmability Team",
+      "licenses": "Apache License, Version 2.0",
+      "isProduction": false
+    },
+    {
+      "name": "rx-lite-aggregates",
+      "publisher": "Cloud Programmability Team",
+      "licenses": "Apache License, Version 2.0",
+      "isProduction": false
+    },
+    {
+      "name": "s3",
+      "publisher": "Andrew Kelley",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "safe-buffer",
+      "publisher": "Feross Aboukhadijeh",
+      "licenses": "MIT",
+      "email": "feross@feross.org",
+      "isProduction": false
+    },
+    {
+      "name": "sass-graph",
+      "publisher": "xzyfer",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "sax",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "MIT",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "scss-tokenizer",
+      "publisher": "xzyfer",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "semver",
+      "licenses": "BSD",
+      "isProduction": false
+    },
+    {
+      "name": "send",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "sequelize",
+      "publisher": "Sascha Depold",
+      "licenses": "MIT",
+      "email": "sascha@depold.com",
+      "isProduction": false
+    },
+    {
+      "name": "sequelize-cli",
+      "publisher": "Sascha Depold",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "sequencify",
+      "publisher": "Rob Richardson",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "serve-static",
+      "publisher": "Douglas Christopher Wilson",
+      "licenses": "MIT",
+      "email": "doug@somethingdoug.com",
+      "isProduction": false
+    },
+    {
+      "name": "set-blocking",
+      "publisher": "Ben Coe",
+      "licenses": "ISC",
+      "email": "ben@npmjs.com",
+      "isProduction": false
+    },
+    {
+      "name": "set-immediate-shim",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "setprototypeof",
+      "publisher": "Wes Todd",
+      "licenses": "ISC",
+      "isProduction": false
+    },
+    {
+      "name": "shebang-command",
+      "publisher": "Kevin Martensson",
+      "licenses": "MIT",
+      "email": "kevinmartensson@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "shebang-regex",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "shimmer",
+      "publisher": "Forrest L Norvell",
+      "licenses": "BSD-2-Clause",
+      "email": "ogd@aoaioxxysz.net",
+      "isProduction": false
+    },
+    {
+      "name": "showdown",
+      "publisher": "",
+      "licenses": [
+        "https://github.com/showdownjs/showdown/blob/master/license.txt",
+        "BSD"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "sigmund",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "signal-exit",
+      "publisher": "Ben Coe",
+      "licenses": "ISC",
+      "email": "ben@npmjs.com",
+      "isProduction": false
+    },
+    {
+      "name": "simple-fmt",
+      "publisher": "Olov Lassus",
+      "licenses": "MIT",
+      "email": "olov.lassus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "simple-is",
+      "publisher": "Olov Lassus",
+      "licenses": "MIT",
+      "email": "olov.lassus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "slice-ansi",
+      "publisher": "David Caccavella",
+      "licenses": "MIT",
+      "email": "threedeecee@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "sntp",
+      "publisher": "Eran Hammer",
+      "licenses": "BSD",
+      "email": "eran@hueniverse.com",
+      "isProduction": false
+    },
+    {
+      "name": "source-map",
+      "publisher": "Nick Fitzgerald",
+      "licenses": "BSD-3-Clause",
+      "email": "nfitzgerald@mozilla.com",
+      "isProduction": false
+    },
+    {
+      "name": "sparkles",
+      "publisher": "Blaine Bublitz",
+      "licenses": "MIT",
+      "email": "blaine@iceddev.com",
+      "isProduction": false
+    },
+    {
+      "name": "spdx-correct",
+      "publisher": "Kyle E. Mitchell",
+      "licenses": "Apache-2.0",
+      "email": "kyle@kemitchell.com",
+      "isProduction": false
+    },
+    {
+      "name": "spdx-expression-parse",
+      "publisher": "Kyle E. Mitchell",
+      "licenses": "(MIT AND CC-BY-3.0)",
+      "email": "kyle@kemitchell.com",
+      "isProduction": false
+    },
+    {
+      "name": "spdx-license-ids",
+      "publisher": "Shinnosuke Watanabe",
+      "licenses": "Unlicense",
+      "isProduction": false
+    },
+    {
+      "name": "spin.js",
+      "publisher": "",
+      "licenses": [
+        "MIT*"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "split",
+      "publisher": "Dominic Tarr",
+      "licenses": "MIT",
+      "email": "dominic.tarr@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "sprintf-js",
+      "publisher": "Alexandru Marasteanu",
+      "licenses": "BSD-3-Clause",
+      "email": "hello@alexei.ro",
+      "isProduction": false
+    },
+    {
+      "name": "sshpk",
+      "publisher": "Joyent, Inc",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "stable",
+      "publisher": "Angry Bytes",
+      "licenses": "MIT",
+      "email": "info@angrybytes.com",
+      "isProduction": false
+    },
+    {
+      "name": "stack-trace",
+      "publisher": "Felix Geisendörfer",
+      "licenses": "MIT",
+      "email": "felix@debuggable.com",
+      "isProduction": false
+    },
+    {
+      "name": "statuses",
+      "publisher": "Jonathan Ong",
+      "licenses": "MIT",
+      "email": "me@jongleberry.com",
+      "isProduction": false
+    },
+    {
+      "name": "stdout-stream",
+      "licenses": "MIT*",
+      "isProduction": false
+    },
+    {
+      "name": "stealthy-require",
+      "publisher": "Nicolai Kamenzky",
+      "licenses": "ISC",
+      "isProduction": false
+    },
+    {
+      "name": "store-items",
+      "publisher": "",
+      "licenses": [
+        "none",
+        "UNLICENSED"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "stream-consume",
+      "publisher": "Aron Nopanen",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "streamsink",
+      "publisher": "Andrew Kelley",
+      "licenses": "MIT",
+      "email": "superjoe30@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "string-width",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "string_decoder",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "stringmap",
+      "publisher": "Olov Lassus",
+      "licenses": "MIT",
+      "email": "olov.lassus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "stringset",
+      "publisher": "Olov Lassus",
+      "licenses": "MIT",
+      "email": "olov.lassus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "stringstream",
+      "publisher": "Michael Hart",
+      "licenses": "MIT",
+      "email": "michael.hart.au@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "strip-ansi",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "strip-bom",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "strip-indent",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "strip-json-comments",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "stripe",
+      "publisher": "Stripe",
+      "licenses": "MIT",
+      "email": "support@stripe.com",
+      "isProduction": false
+    },
+    {
+      "name": "stripe-as-promised",
+      "publisher": "Ben Drucker",
+      "licenses": "MIT",
+      "email": "bvdrucker@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "superagent",
+      "publisher": "TJ Holowaychuk",
+      "licenses": "MIT*",
+      "email": "tj@vision-media.ca",
+      "isProduction": false
+    },
+    {
+      "name": "supports-color",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "table",
+      "publisher": "Gajus Kuizinas",
+      "licenses": "BSD-3-Clause",
+      "email": "gajus@gajus.com",
+      "isProduction": false
+    },
+    {
+      "name": "tar",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "tar-pack",
+      "licenses": "BSD-2-Clause",
+      "isProduction": false
+    },
+    {
+      "name": "text-table",
+      "publisher": "James Halliday",
+      "licenses": "MIT",
+      "email": "mail@substack.net",
+      "isProduction": false
+    },
+    {
+      "name": "three.js",
+      "publisher": "",
+      "licenses": [
+        "MIT"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "throng",
+      "publisher": "Hunter Loftis",
+      "licenses": "MIT",
+      "email": "hunter@hunterloftis.com",
+      "isProduction": false
+    },
+    {
+      "name": "through",
+      "publisher": "Dominic Tarr",
+      "licenses": "MIT",
+      "email": "dominic.tarr@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "through2",
+      "publisher": "Rod Vagg",
+      "licenses": "MIT",
+      "email": "r@va.gg",
+      "isProduction": false
+    },
+    {
+      "name": "tildify",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "time-stamp",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "timers-ext",
+      "publisher": "Mariusz Nowak",
+      "licenses": "MIT",
+      "email": "medyk@medikoo.com",
+      "isProduction": false
+    },
+    {
+      "name": "tiny-lr-fork",
+      "publisher": "mklabs",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "tmp",
+      "publisher": "KARASZI István",
+      "licenses": "MIT",
+      "email": "github@spam.raszi.hu",
+      "isProduction": false
+    },
+    {
+      "name": "to-iso-string",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "topo",
+      "licenses": "BSD-3-Clause",
+      "isProduction": false
+    },
+    {
+      "name": "toposort-class",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "tough-cookie",
+      "publisher": "Jeremy Stashewsky",
+      "licenses": "BSD-3-Clause",
+      "email": "jstashewsky@salesforce.com",
+      "isProduction": false
+    },
+    {
+      "name": "tracking",
+      "publisher": "",
+      "licenses": [
+        "BSD"
+      ],
+      "email": "",
+      "isProduction": false
+    },
+    {
+      "name": "trim-newlines",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "true-case-path",
+      "publisher": "barsh",
+      "licenses": "Apache version 2.0",
+      "isProduction": false
+    },
+    {
+      "name": "tryor",
+      "publisher": "Olov Lassus",
+      "licenses": "MIT",
+      "email": "olov.lassus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "tsscmp",
+      "publisher": "suryagh",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "tunnel-agent",
+      "publisher": "Mikeal Rogers",
+      "licenses": "Apache*",
+      "email": "mikeal.rogers@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "tweetnacl",
+      "publisher": "TweetNaCl-js contributors",
+      "licenses": "Unlicense",
+      "isProduction": false
+    },
+    {
+      "name": "type-check",
+      "publisher": "George Zahariev",
+      "licenses": "MIT",
+      "email": "z@georgezahariev.com",
+      "isProduction": false
+    },
+    {
+      "name": "type-detect",
+      "publisher": "Jake Luer",
+      "licenses": "MIT",
+      "email": "jake@alogicalparadox.com",
+      "isProduction": false
+    },
+    {
+      "name": "type-is",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "typedarray",
+      "publisher": "James Halliday",
+      "licenses": "MIT",
+      "email": "mail@substack.net",
+      "isProduction": false
+    },
+    {
+      "name": "uglify-js",
+      "publisher": "Mihai Bazon",
+      "licenses": "BSD-2-Clause",
+      "email": "mihai.bazon@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "uglify-to-browserify",
+      "publisher": "ForbesLindesay",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "uid-number",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "uid-safe",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "umzug",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "unc-path-regex",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "undefined",
+      "licenses": "Undefined",
+      "isProduction": false
+    },
+    {
+      "name": "underscore",
+      "publisher": "Jeremy Ashkenas",
+      "licenses": "MIT",
+      "email": "jeremy@documentcloud.org",
+      "isProduction": false
+    },
+    {
+      "name": "underscore.string",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "unique-stream",
+      "publisher": "Eugene Ware",
+      "licenses": "BSD",
+      "email": "eugene@noblesamurai.com",
+      "isProduction": false
+    },
+    {
+      "name": "unpipe",
+      "publisher": "Douglas Christopher Wilson",
+      "licenses": "MIT",
+      "email": "doug@somethingdoug.com",
+      "isProduction": false
+    },
+    {
+      "name": "uri-path",
+      "publisher": "Ult Combo",
+      "licenses": "WTFPL OR MIT",
+      "email": "ultcombo@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "user-home",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "usps-webtools",
+      "publisher": "Sherod Taylor",
+      "licenses": "MIT",
+      "email": "sherodtaylor@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "util-deprecate",
+      "publisher": "Nathan Rajlich",
+      "licenses": "MIT",
+      "email": "nathan@tootallnate.net",
+      "isProduction": false
+    },
+    {
+      "name": "utils-merge",
+      "publisher": "Jared Hanson",
+      "licenses": "MIT",
+      "email": "jaredhanson@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "uuid",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "v8flags",
+      "publisher": "Tyler Kellen",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "validate-npm-package-license",
+      "publisher": "Kyle E. Mitchell",
+      "licenses": "Apache-2.0",
+      "email": "kyle@kemitchell.com",
+      "isProduction": false
+    },
+    {
+      "name": "validator",
+      "publisher": "Chris O'Hara",
+      "licenses": "MIT",
+      "email": "cohara87@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "vary",
+      "publisher": "Douglas Christopher Wilson",
+      "licenses": "MIT",
+      "email": "doug@somethingdoug.com",
+      "isProduction": false
+    },
+    {
+      "name": "verror",
+      "licenses": "MIT*",
+      "isProduction": false
+    },
+    {
+      "name": "vinyl",
+      "publisher": "Fractal",
+      "licenses": "MIT",
+      "email": "contact@wearefractal.com",
+      "isProduction": false
+    },
+    {
+      "name": "vinyl-fs",
+      "publisher": "Fractal",
+      "licenses": "MIT",
+      "email": "contact@wearefractal.com",
+      "isProduction": false
+    },
+    {
+      "name": "wellknown",
+      "publisher": "Tom MacWright",
+      "licenses": "BSD",
+      "isProduction": false
+    },
+    {
+      "name": "when",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "which",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "which-module",
+      "publisher": "nexdrew",
+      "licenses": "ISC",
+      "isProduction": false
+    },
+    {
+      "name": "wide-align",
+      "publisher": "Rebecca Turner",
+      "licenses": "ISC",
+      "email": "me@re-becca.org",
+      "isProduction": false
+    },
+    {
+      "name": "window-size",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "winston",
+      "publisher": "Charlie Robbins",
+      "licenses": "MIT",
+      "email": "charlie.robbins@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "wkx",
+      "publisher": "Christian Schwarz",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "wordwrap",
+      "publisher": "James Halliday",
+      "licenses": "MIT/X11",
+      "email": "mail@substack.net",
+      "isProduction": false
+    },
+    {
+      "name": "wrap-ansi",
+      "publisher": "Sindre Sorhus",
+      "licenses": "MIT",
+      "email": "sindresorhus@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "wrappy",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "write",
+      "publisher": "Jon Schlinkert",
+      "licenses": "MIT",
+      "isProduction": false
+    },
+    {
+      "name": "x-xss-protection",
+      "publisher": "Adam Baldwin",
+      "licenses": "MIT",
+      "email": "baldwin@andyet.net",
+      "isProduction": false
+    },
+    {
+      "name": "xml2js",
+      "publisher": "Marek Kubica",
+      "licenses": "MIT*",
+      "email": "marek@xivilization.net",
+      "isProduction": false
+    },
+    {
+      "name": "xmlbuilder",
+      "publisher": "Ozgur Ozcitak",
+      "licenses": "MIT",
+      "email": "oozcitak@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "xss-filters",
+      "publisher": "Adonis Fung",
+      "licenses": "BSD",
+      "email": "adon@yahoo-inc.com",
+      "isProduction": false
+    },
+    {
+      "name": "xtend",
+      "publisher": "Raynos",
+      "licenses": "MIT",
+      "email": "raynos2@gmail.com",
+      "isProduction": false
+    },
+    {
+      "name": "y18n",
+      "publisher": "Ben Coe",
+      "licenses": "ISC",
+      "email": "ben@npmjs.com",
+      "isProduction": false
+    },
+    {
+      "name": "yallist",
+      "publisher": "Isaac Z. Schlueter",
+      "licenses": "ISC",
+      "email": "i@izs.me",
+      "isProduction": false
+    },
+    {
+      "name": "yargs",
+      "publisher": "Alex Ford",
+      "licenses": "MIT/X11",
+      "email": "Alex.Ford@CodeTunnel.com",
+      "isProduction": false
+    },
+    {
+      "name": "yargs-parser",
+      "publisher": "Ben Coe",
+      "licenses": "ISC",
+      "email": "ben@npmjs.com",
+      "isProduction": false
+    }
+  ]
+}

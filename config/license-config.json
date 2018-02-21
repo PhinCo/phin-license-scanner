@@ -78,7 +78,7 @@
           "overrideCategorization": "dev"
         },
         "node-intelhex": {
-          "overrideCategorization": "dev"
+          "overrideCategorization": "prod"
         }
       }
     },

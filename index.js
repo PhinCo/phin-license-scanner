@@ -1,5 +1,5 @@
 ( function(){
 
-	module.exports = require('./lib/phin-license-scanner');
+	module.exports = require('./lib/LicenseScanner');
 
 })();

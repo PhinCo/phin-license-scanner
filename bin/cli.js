@@ -1,18 +1,18 @@
 #!/usr/bin/env node
 
-( function(){
+( async function(){
 
 	'use strict';
 
-	var program = require('commander');
-	var ScanRunner = require('../lib/ScanRunner');
-	var _ = require('lodash');
-	var path = require('path');
-	var fs = require('fs');
+	const program = require('commander');
+	const ScanRunner = require('../lib/Runner');
+	const _ = require('lodash');
+	const path = require('path');
+	const fs = require('fs');
 	require('colors');
 
-	var VERSION = require('../package.json').version;
-	var LICENSE_CONFIG_FILE_PATH = path.join( __dirname, "../config/license-config.json" );
+	const VERSION = require('../package.json').version;
+	const LICENSE_CONFIG_FILE_PATH = path.join( __dirname, "../config/license-config.json" );
 
 	program
 	.version( VERSION )
@@ -21,18 +21,21 @@
 	.option('--skipBower', "Don't scan for bower dependencies, default is scan for bower")
 	.option('--skipUpdate', "Skip updating node and bower dependencies before scan")
 	.option('-d, --dev', 'Categorize all dependencies as development')
-	.option('-p, --prod', 'Categorize all dependenceis as production')
+	.option('-p, --prod', 'Categorize all dependencies as production')
 	.option('-u, --unknowns', 'Log unknowns to the console as warnings')
 	.option('--config [filepath]', 'Provide an alternate config file' )
 	.option('-l, --list', 'List runners found in the config file')
 	.option('-r, --run [runner-key]', 'Execute a runner')
 	.option('-x, --nosave', 'Scan only, don\'t write directory license files')
 	.option('-o, --output [outputFile]', 'Output aggregate JSON file')
+	.option('--format [json|csv]', 'Output format, default is json')
 	.option('--warningsOff', 'Suppress warning about licenses identified in the config file')
 	.arguments("[directories]", "Default is cwd")
 	.parse( process.argv );
 
+	// default to current directory
 	if( program.args.length === 0 ) program.args.push(".");
+
 	if( program.dev && program.prod ){
 		console.error("Can pass in only one of --dev or --prod");
 		process.exit(1);
@@ -41,8 +44,8 @@
 	if( !program.config ) program.config = LICENSE_CONFIG_FILE_PATH;
 
 	function _loadLicenseConfigFile( filepath ){
-		var filedata = false;
-		var jsondata = false;
+		let filedata = false;
+		let jsondata = false;
 
 		try{
 			filedata = fs.readFileSync( filepath, {encoding: 'utf8'} );
@@ -65,8 +68,8 @@
 
 	function _listRunners(){
 		console.log( "Listing Runners in config file" );
-		var runners = _.get( options.config, 'runners' );
-		var runnerNames = _.keys( runners );
+		const runners = _.get( options.config, 'runners' );
+		const runnerNames = _.keys( runners );
 		if( _.size( runnerNames ) === 0 ){
 			console.log( "no runners founds in the config file" );
 		}else{
@@ -74,8 +77,8 @@
 		}
 	}
 
-	function _buildScanRunner( options ){
-		var runner = false;
+	function _buildRunner( options ){
+		let runner = false;
 
 		if( program.run ){
 			runner = _.get( options, `config.runners[${program.run}]` );
@@ -90,10 +93,14 @@
 	}
 
 	function _buildOptions( config ){
-		var options = {};
+		const options = {};
 
 		if( program.dev) options.overrideCategorization = 'dev';
 		else if( program.prod ) options.overrideCategorization = 'prod';
+
+		if( program.output ){
+			options.output = { path: program.output, format: "json" };
+		}
 
 		options.enableUnclean = program.enableUnclean;
 		options.skipNode = program.skipNode;
@@ -102,10 +109,6 @@
 		options.unknowns = program.unknowns;
 		options.warnings = !program.warningsOff;
 		options.nosave = program.nosave;
-
-		if( program.output ){
-			options.output = { path: program.output, format: "json" };
-		}
 
 		options.config = config;
 
@@ -124,15 +127,17 @@
 		return;
 	}
 
-	let scanRunner = _buildScanRunner( options );
+	let runner = _buildRunner( options );
 
-	if( options.nosave ){
-		console.log("Scanning Only. Not writing files\n".red );
-	}
+	// if( options.nosave ){
+	// 	console.log("Scanning Only. Not writing files\n".red );
+	// }
 
-	return scanRunner.run()
-	.then( () => {
+	try{
+		await runner.run();
 		console.log( "Done.".green );
-	})
+	}catch(error){
+		console.log( "Failed", error );
+	}
 
 })();

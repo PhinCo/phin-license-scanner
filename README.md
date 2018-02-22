@@ -16,10 +16,10 @@ Scans for *node* and *bower* dependencies
 
 ```
 cd ~/repos/phin     # top of phin git repo tree
-phin-licenese-scanner --run all-phin
+phin-license-scanner --run all-phin
 ```
 
-Outputs complete csv files in each repo, and an aggregate `phin-license.json` in the current folder.
+Resulting aggregate csv file in ~/repos/phin/phin-license-dependencies.csv
 
 ## Configuration
 

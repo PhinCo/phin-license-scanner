@@ -9,10 +9,12 @@
 	const _ = require('lodash');
 	const path = require('path');
 	const fs = require('fs');
+	const csvwriter = require('csvwriter');
 	require('colors');
 
 	const VERSION = require('../package.json').version;
 	const LICENSE_CONFIG_FILE_PATH = path.join( __dirname, "../config/license-config.json" );
+	const DEFAULT_OUTPUT_DIR = process.cwd();
 
 	program
 	.version( VERSION )
@@ -26,11 +28,9 @@
 	.option('--config [filepath]', 'Provide an alternate config file' )
 	.option('-l, --list', 'List runners found in the config file')
 	.option('-r, --run [runner-key]', 'Execute a runner')
-	.option('-x, --nosave', 'Scan only, don\'t write directory license files')
-	.option('-o, --output [outputFile]', 'Output aggregate JSON file')
-	.option('--format [json|csv]', 'Output format, default is json')
+	.option('-o, --output [outputDirectory]', `Output results in directory, default is ${DEFAULT_OUTPUT_DIR}`)
 	.option('--warningsOff', 'Suppress warning about licenses identified in the config file')
-	.arguments("[directories]", "Default is cwd")
+	.arguments("[directories]", `Default is current working directory ${process.cwd()}`)
 	.parse( process.argv );
 
 	// default to current directory
@@ -42,6 +42,7 @@
 	}
 
 	if( !program.config ) program.config = LICENSE_CONFIG_FILE_PATH;
+	if( !program.output ) program.output = DEFAULT_OUTPUT_DIR;
 
 	function _loadLicenseConfigFile( filepath ){
 		let filedata = false;
@@ -98,23 +99,36 @@
 		if( program.dev) options.overrideCategorization = 'dev';
 		else if( program.prod ) options.overrideCategorization = 'prod';
 
-		if( program.output ){
-			options.output = { path: program.output, format: "json" };
-		}
-
 		options.enableUnclean = program.enableUnclean;
 		options.skipNode = program.skipNode;
 		options.skipBower = program.skipBower;
 		options.skipUpdate = program.skipUpdate;
 		options.unknowns = program.unknowns;
 		options.warnings = !program.warningsOff;
-		options.nosave = program.nosave;
+		options.output = program.output;
 
 		options.config = config;
 
 		return options;
 	}
 
+	async function outputDependencies(){
+		const dependencies = runner.allDependencies();
+		const filepath = path.join( program.output, 'phin-license-dependencies.csv' );
+
+		csvwriter( dependencies, function( error, csv ){
+			if( error ) return Promise.reject( error );
+
+			try{
+				console.log(`Writing ${dependencies.length} dependencies to ${filepath}`)
+				fs.writeFileSync( filepath, csv, { encoding: 'utf8' });
+			}catch( error ){
+				Promise.reject( error );
+			}
+
+			Promise.resolve();
+		});
+	}
 	/*
 	 * Do It
 	 */
@@ -129,13 +143,10 @@
 
 	let runner = _buildRunner( options );
 
-	// if( options.nosave ){
-	// 	console.log("Scanning Only. Not writing files\n".red );
-	// }
-
 	try{
 		await runner.run();
-		console.log( "Done.".green );
+		console.log( "Done Scanning.".green );
+		outputDependencies();
 	}catch(error){
 		console.log( "Failed", error );
 	}

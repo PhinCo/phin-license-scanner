@@ -62,7 +62,8 @@
     "phin-companies",
     "phin-retailer-portal",
     "phin-rig",
-    "phin-gateway"
+    "phin-gateway",
+    "phin"
   ],
   "runners": {
     "test" : {
@@ -95,16 +96,17 @@
           "overrideCategorization": "dev"
         },
         "node-intelhex": {
-            "dev": true
+            "overrideCategorization": "dev"
         },
         "node-jlink": {
-            "dev": true
+          "overrideCategorization": "dev"
         },
         "phin-admin": {
         },
         "phin-advertisement-unpacker": {
         },
         "phin-angular": {
+          "skipBower": true
         },
         "phin-api": {
         },
@@ -136,18 +138,30 @@
           "overrideCategorization": "dev"
         },
         "node-postgres": {},
-        "tests-sms-receiver": { "dev": true },
+        "tests-sms-receiver": {
+          "overrideCategorization": "dev"
+        },
         "phin-web-2": {},
-        "phin-dashboard": {},
-        "phin-wordpress-generator": { "dev": true },
+        "phin-dashboard": {
+          "overrideCategorization": "dev"
+        },
+        "phin-wordpress-generator": {
+          "overrideCategorization": "dev"
+        },
         "store-items": {},
-        "holy-sheet": { "dev": true },
+        "holy-sheet": {
+          "overrideCategorization": "dev"
+        },
         "phin-amazon": {},
         "companies-api": {},
         "phin-retailer-portal": {},
-        "phin-rig": { "dev" : true },
+        "phin-rig": {
+          "overrideCategorization": "dev"
+        },
         "phin-gateway": {},
-        "phin-date-analyzer": { "dev": true }
+        "phin-data-analyzer": {
+          "overrideCategorization": "dev"
+        }
 
       }
     }

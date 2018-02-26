@@ -5,7 +5,7 @@
 	'use strict';
 
 	const program = require('commander');
-	const ScanRunner = require('../lib/Runner');
+	const LicenseScanner = require('../lib/LicenseScanner');
 	const _ = require('lodash');
 	const path = require('path');
 	const fs = require('fs');
@@ -37,7 +37,7 @@
 
 	if( !program.output ) program.output = DEFAULT_OUTPUT_DIR;
 
-	function _buildOptions( directories, runConfig ){
+	function _buildDirectoryOptions( directories, runConfig ){
 		const masterOptions = {
 			enableUnclean: program.enableUnclean,
 			skipNode: program.skipNode,
@@ -62,6 +62,40 @@
 		if( _.size( runConfigDirectories ) === 0 ) throw new Error( `Run config file must specify directories` );
 		if( _.size( directories ) === 0 ) return runConfigDirectories;
 		return _.intersection( runConfigDirectories, directories );
+	}
+
+	function moduleList(){
+		let aggregate = [];
+
+		this.directoryNodes.forEach( directoryNode => {
+			aggregate = aggregate.concat( directoryNode.allDependencies());
+		});
+
+		if( productionOnly ){
+			aggregate = _.filter( aggregate, { isProduction: true } );
+		}
+
+		const listWithCleanNames = _.map( aggregate, dep =>{
+			const cleanName = dep.name.split( '@' )[0];
+			return {
+				name: cleanName,
+				publisher: dep.publisher,
+				licenses: dep.licenses,
+				email: dep.email,
+				isProduction: dep.isProduction
+			};
+		});
+
+		// Sort by name, then production, then dev
+		// When uniq'ing this sorted list, production instance of duplication is retained in final output
+		const sortedList = _.sortBy( listWithCleanNames, ["name", dep => -(dep.isProduction)] );
+		return _.uniqWith( sortedList, ( a, b ) => a.name === b.name );
+	}
+
+	function fullDependencyList( results ){
+		const output = [];
+
+
 	}
 
 	async function outputDependencies(){
@@ -94,7 +128,9 @@
 	if( program.config ) licenseConfig = loadJSON( program.config );
 
 	const directories = _buildListOfDirectories( program.args, runConfig );
-	const options = _buildOptions( directories, runConfig );
+	const directoryOptions = _buildDirectoryOptions( directories, runConfig );
+
+	const results = await LicenseScanner.scanDirectories( directories, directoryOptions, licenseConfig );
 
 	// try{
 	// 	await runner.run();

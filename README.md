@@ -1,25 +1,38 @@
 # phin-license-scanner
 
-Phin's scanner for OSS license dependencies
+Identify troublesome license dependencies in your NodeJS/Bower projects. Licenses
+from modules included many levels deep may apply to your project. Protect yourself
+by scanning the entire dependency tree.
 
-Scans for *node* and *bower* dependencies
 
-## Installation
+## Installation and Usage
 
-```npm install -g @connectedyard/phin-license-scanner```
-
-## Usage: Scan a Project Folder
-
-```phin-license-scanner project-folder```
-
-## Usage: Scan all of pHin
-
+*Command Line*
 ```
-cd ~/repos/phin     # top of phin git repo tree
-phin-license-scanner --run all-phin
+npm install -g @connectedyard/phin-license-scanner
+
+phin-license-scanner my-project-folder-1 my-project-folder-2
 ```
 
-Resulting aggregate csv file in ~/repos/phin/phin-license-dependencies.csv
+*API (WIP)*
+```
+npm install @connnectedyard/phin-license-scanner
+
+const Scanner = require('phin-license-scanner').LicenseScanner;
+const scanner = new Scanner( 'my-directory', options );
+scanner.scan();
+const dependencies = scanner.allDependencies();
+
+```
+
+
+## What you get
+
+1. Scans for both NodeJS and Bower dependencies
++ Troublesome licenses (e.g., GPL, Apache) will be listed
++ Production and Development licenses are listed separately
++ Indeterminate licenses are listed
++ Manually determined licenses can be added to the license config file
 
 ## Configuration
 

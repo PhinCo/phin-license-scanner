@@ -1,5 +1,5 @@
 ( function(){
 
-	module.exports = require('./lib/LicenseScanner');
+	module.exports = require('./lib/scanning-utils');
 
 })();

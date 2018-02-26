@@ -1,0 +1,65 @@
+{
+  "directories": {
+    "node-cli-auth": {
+      "overrideCategorization": "dev"
+    },
+    "node-intelhex": {
+      "overrideCategorization": "dev"
+    },
+    "node-jlink": {
+      "overrideCategorization": "dev"
+    },
+    "phin-admin": {},
+    "phin-advertisement-unpacker": {},
+    "phin-angular": {
+      "skipBower": true
+    },
+    "phin-api": {},
+    "phin-ble": {},
+    "phin-bridge-firmware/src": {
+      "overrideCategorization": "dev"
+    },
+    "phin-common-js": {},
+    "phin-license-scanner": {
+      "overrideCategorization": "dev"
+    },
+    "phin-nrf51": {
+      "overrideCategorization": "dev"
+    },
+    "phin-service-network": {},
+    "phin-web": {},
+    "phin-web-accounts": {},
+    "phinternal-api": {},
+    "phirmware-test/nodejs": {
+      "overrideCategorization": "dev"
+    },
+    "phirmware-tool": {
+      "overrideCategorization": "dev"
+    },
+    "node-postgres": {},
+    "tests-sms-receiver": {
+      "overrideCategorization": "dev"
+    },
+    "phin-web-2": {},
+    "phin-dashboard": {
+      "overrideCategorization": "dev"
+    },
+    "phin-wordpress-generator": {
+      "overrideCategorization": "dev"
+    },
+    "store-items": {},
+    "holy-sheet": {
+      "overrideCategorization": "dev"
+    },
+    "phin-amazon": {},
+    "companies-api": {},
+    "phin-retailer-portal": {},
+    "phin-rig": {
+      "overrideCategorization": "dev"
+    },
+    "phin-gateway": {},
+    "phin-data-analyzer": {
+      "overrideCategorization": "dev"
+    }
+  }
+}

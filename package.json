@@ -1,6 +1,6 @@
 {
   "name": "@connectedyard/phin-license-scanner",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "scan for licenses in phin nodejs projects (nodejs and bower dependencies)",
   "main": "index.js",
   "scripts": {

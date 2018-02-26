@@ -6,6 +6,7 @@
 
 	const program = require('commander');
 	const LicenseScanner = require('../lib/LicenseScanner');
+	const scanningUtils = require('../lib/scanning-utils');
 	const _ = require('lodash');
 	const path = require('path');
 	const fs = require('fs');
@@ -64,49 +65,20 @@
 		return _.intersection( runConfigDirectories, directories );
 	}
 
-	function moduleList(){
-		let aggregate = [];
-
-		this.directoryNodes.forEach( directoryNode => {
-			aggregate = aggregate.concat( directoryNode.allDependencies());
-		});
-
-		if( productionOnly ){
-			aggregate = _.filter( aggregate, { isProduction: true } );
-		}
-
-		const listWithCleanNames = _.map( aggregate, dep =>{
-			const cleanName = dep.name.split( '@' )[0];
-			return {
-				name: cleanName,
-				publisher: dep.publisher,
-				licenses: dep.licenses,
-				email: dep.email,
-				isProduction: dep.isProduction
-			};
-		});
-
-		// Sort by name, then production, then dev
-		// When uniq'ing this sorted list, production instance of duplication is retained in final output
-		const sortedList = _.sortBy( listWithCleanNames, ["name", dep => -(dep.isProduction)] );
-		return _.uniqWith( sortedList, ( a, b ) => a.name === b.name );
-	}
-
-	function fullDependencyList( results ){
-		const output = [];
+	/**
+	 * Group dependencies by module
+	 * @param dependenciesByDirectory
+	 * @return {Array}
+	 */
 
 
-	}
+	async function writeDependenciesCSV( filePath, dependencies ){
 
-	async function outputDependencies(){
-		const dependencies = runner.allDependencies();
-		const filePath = path.join( program.output, 'phin-license-dependencies.csv' );
-
-		csvwriter( dependencies, function( error, csv ){
+		csvwriter( dependencies, (error, csv) => {
 			if( error ) return Promise.reject( error );
 
 			try{
-				console.log(`Writing ${dependencies.length} dependencies to ${filePath}`)
+				console.log(`Writing ${dependencies.length} dependencies to ${filePath}`);
 				fs.writeFileSync( filePath, csv, { encoding: 'utf8' });
 			}catch( error ){
 				Promise.reject( error );
@@ -130,14 +102,41 @@
 	const directories = _buildListOfDirectories( program.args, runConfig );
 	const directoryOptions = _buildDirectoryOptions( directories, runConfig );
 
-	const results = await LicenseScanner.scanDirectories( directories, directoryOptions, licenseConfig );
+	const dependenciesByDirectory = await LicenseScanner.scanDirectories( directories, directoryOptions, licenseConfig );
 
-	// try{
-	// 	await runner.run();
-	// 	console.log( "Done Scanning.".green );
-	// 	outputDependencies();
-	// }catch(error){
-	// 	console.log( "Failed", error );
-	// }
+	/*
+ 	 * Generate Reports
+ 	 */
+
+	console.log(`\nWriting reports to ${program.output.yellow}\n`);
+
+	const sortedDependencies = LicenseScanner.sortedMultiDirectoryDependencies( dependenciesByDirectory );
+
+	const sortedProductionDependencies = _.filter( sortedDependencies, { isProduction: true } );
+	const productionModuleList = _.map( _.uniqBy( sortedProductionDependencies, 'module' ), row =>
+			_.pick( row, ['module', 'licenses', 'directory', 'publisher', 'repo', 'type' ] )
+		);
+	const unknowns = LicenseScanner.filterDependenciesWithUnknownLicenses( sortedDependencies );
+	const warnings = LicenseScanner.filterDependenciesWithLicenseWarnings( sortedDependencies, licenseConfig );
+
+	/*
+	 * Write Report Files
+	 */
+	
+	const allFilePath = path.join( program.output, 'dependencies-all.csv' );
+	await writeDependenciesCSV( allFilePath, sortedDependencies );
+
+	const prodFilePath = path.join( program.output, 'dependencies-prod.csv' );
+	await writeDependenciesCSV( prodFilePath, sortedDependencies );
+
+	const prodModuleListPath = path.join( program.output, 'dependencies-prod-modules.csv' );
+	await writeDependenciesCSV( prodModuleListPath, productionModuleList );
+
+	const waningLicenseListPath = path.join( program.output, 'dependencies-warnings.csv' );
+	await writeDependenciesCSV( waningLicenseListPath, warnings );
+
+	const unknownsLicenseListPath = path.join( program.output, 'dependencies-unknown.csv' );
+	await writeDependenciesCSV( unknownsLicenseListPath, unknowns );
+
 
 })();

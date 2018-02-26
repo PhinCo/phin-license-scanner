@@ -18,10 +18,9 @@ phin-license-scanner my-project-folder-1 my-project-folder-2
 ```
 npm install @connnectedyard/phin-license-scanner
 
-const Scanner = require('phin-license-scanner').LicenseScanner;
-const scanner = new Scanner( 'my-directory', options );
-scanner.scan();
-const dependencies = scanner.allDependencies();
+const LicenseScanner = require('phin-license-scanner');
+const dependenciesByDirectory = await LicenseScanner.scanDirectories( directories, directoryOptions, licenseConfig );
+console.log( dependenciesByDirectory );
 
 ```
 
@@ -33,8 +32,10 @@ const dependencies = scanner.allDependencies();
 + Production and Development licenses are listed separately
 + Indeterminate licenses are listed
 + Manually determined licenses can be added to the license config file
++ Optionally require git repo to be clean
++ Optionally preform `npm update` and `bower update` in each directory
 
-## Configuration
+## License Configuration
 
 A configuration file is installed with the scanner in the scanner's folder in your global node modules. An alternative
 configuration file can be loaded by passing the `--config [filepath]` parameter.

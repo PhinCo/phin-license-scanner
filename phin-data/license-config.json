@@ -41,6 +41,9 @@
     },
     "GNU": {
       "pattern": "GNU"
+    },
+    "Apache": {
+      "pattern": "Apache"
     }
   },
   "bower": {

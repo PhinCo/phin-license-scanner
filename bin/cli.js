@@ -11,23 +11,28 @@
 	const path = require('path');
 	const fs = require('fs');
 	const csvwriter = require('csvwriter');
-	const loadJSON = require('../lib/load-json');
+	const utils = require('../lib/utils');
 	require('colors');
 
 	const VERSION = require('../package.json').version;
+	// const HOMEDIR = require('os').homedir();
 	const DEFAULT_OUTPUT_DIR = process.cwd();
+	const DEFAULT_WORKING_DIR = process.cwd();
+	const DEFAULT_LICENSE_CONFIG_PATH = path.join( process.cwd(), ".license-config.json");
+	const DEFAULT_RUN_CONFIG_PATH = path.join( process.cwd(), ".run-config.json");
 
 	program
 	.version( VERSION )
-	.option('--config [filepath]', 'Provide an optional license config file' )
-	.option('--run [filepath]', 'Provide an optional run configuration, defining directories and options for each')
-	.option('-o, --output [outputFolder]', `Output results in directory, default is ${DEFAULT_OUTPUT_DIR}`)
-	.option('--enableUnclean', "Don't require repo to be clean, default is clean required")
+	.option('-c, --config [filepath]', `Provide a license config file. By default loads from ${DEFAULT_LICENSE_CONFIG_PATH} if found` )
+	.option('-w, --working [workingFolder]', `Run scan from directory. By default runs from ${DEFAULT_WORKING_DIR}`)
+	.option('-r, --run [filepath]', `Provide a run config, defining directories and options for each. By default loads from ${DEFAULT_RUN_CONFIG_PATH}`)
+	.option('-o, --output [outputFolder]', `Output results in directory. By default outputs to ${DEFAULT_OUTPUT_DIR}`)
+	.option('-u, --enableUnclean', "Don't require repo to be clean, default is clean required")
+	.option('-d, --dev', 'Categorize all dependencies as development')
+	.option('-p, --prod', 'Categorize all dependencies as production')
 	.option('--skipNode', "Don't scan for node dependencies, default is scan for node")
 	.option('--skipBower', "Don't scan for bower dependencies, default is scan for bower")
 	.option('--skipUpdate', "Skip updating node and bower dependencies before scan")
-	.option('-d, --dev', 'Categorize all dependencies as development')
-	.option('-p, --prod', 'Categorize all dependencies as production')
 	.arguments("[directories]", `Specify which directories to scan. By Default all directories found from --run [filepath] will be scanned. If no other directory is specified, scans current directory` )
 	.parse( process.argv );
 
@@ -37,6 +42,9 @@
 	}
 
 	if( !program.output ) program.output = DEFAULT_OUTPUT_DIR;
+	if( !program.config ) program.config = DEFAULT_LICENSE_CONFIG_PATH;
+	if( !program.run ) program.run = DEFAULT_RUN_CONFIG_PATH;
+	if( !program.working ) program.working = DEFAULT_WORKING_DIR;
 
 	function _buildDirectoryOptions( directories, runConfig ){
 		const masterOptions = {
@@ -51,7 +59,10 @@
 
 		return directories.reduce( ( accumulator, directory ) => {
 			if( !runConfig ) accumulator[directory] = masterOptions;
-			else accumulator[directory] = _.extend( runConfig.directories[ directory ], masterOptions );
+			else{
+				const directoryOptionOverrides = runConfig.directories[ directory ];
+				accumulator[directory] = _.extend( {}, masterOptions, directoryOptionOverrides );
+			}
 			return accumulator;
 		}, {} );
 	}
@@ -96,13 +107,22 @@
 	let runConfig = false;
 	let licenseConfig = false;
 
-	if( program.run ) runConfig = loadJSON( program.run );
-	if( program.config ) licenseConfig = loadJSON( program.config );
+	if( program.run ){
+		runConfig = utils.loadJSON( program.run );
+		if( runConfig ) console.log( `Loaded run config from ${program.run}` );
+		else console.log( `Run config "${program.run}" not found. Continuing without one` );
+	}
+
+	if( program.config ){
+		licenseConfig = utils.loadJSON( program.config );
+		if( licenseConfig ) console.log( `Loaded run config from ${program.config}` );
+		else console.log( `License config "${program.config}" not found. Continuing without one` );
+	}
 
 	const directories = _buildListOfDirectories( program.args, runConfig );
 	const directoryOptions = _buildDirectoryOptions( directories, runConfig );
 
-	const dependenciesByDirectory = await LicenseScanner.scanDirectories( directories, directoryOptions, licenseConfig );
+	const dependenciesByDirectory = await LicenseScanner.scanDirectories( directories, directoryOptions, licenseConfig, program.working );
 
 	/*
  	 * Generate Reports
